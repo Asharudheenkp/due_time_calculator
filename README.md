@@ -1,1 +1,1 @@
-This is a due and over time calculation based on the shift and also the due time shows in the handy hrm
+This is a due and over time calculation based on the shift and due time shows in the handy hrm
