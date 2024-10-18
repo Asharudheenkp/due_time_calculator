@@ -148,7 +148,7 @@ const CalculatorBox = () => {
                     >
                       <FormControl>
                         <SelectTrigger>
-                          <SelectValue placeholder="Select a verified email to display" />
+                          <SelectValue placeholder="Select your shift" />
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
