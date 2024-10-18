@@ -232,13 +232,13 @@ const CalculatorText = () => {
                     )}
                     {isDueTime && (
                       <>
-                        {`The due time to 6:00 PM: ${timeInfo.dueTimeToMin} `}
+                       <span className="text-red-500 font-bold">{`The due time to 6:00 PM: ${timeInfo.dueTimeToMin} `}</span>
                         <br />
                       </>
                     )}
                     {isDueTime2 && (
                       <>
-                        {`The due time to 6:10 PM: ${timeInfo.dueTimeToMax} `}
+                         <span className="text-red-500 font-bold">{`The due time to 6:10 PM: ${timeInfo.dueTimeToMax} `}</span>
                         <br />
                       </>
                     )}
@@ -260,13 +260,13 @@ const CalculatorText = () => {
                     )}
                     {isDueTime && (
                       <>
-                        {`The due time to 5:30 PM: ${timeInfo.dueTimeToMin} `}
+                        <span className="text-red-500 font-bold">{`The due time to 5:30 PM: ${timeInfo.dueTimeToMin} `}</span>
                         <br />
                       </>
                     )}
                     {isDueTime2 && (
                       <>
-                        {`The due time to 5:40 PM: ${timeInfo.dueTimeToMax} `}
+                         <span className="text-red-500 font-bold">{`The due time to 5:40 PM: ${timeInfo.dueTimeToMax} `}</span>
                         <br />
                       </>
                     )}
@@ -288,13 +288,13 @@ const CalculatorText = () => {
                     )}
                     {isDueTime && (
                       <>
-                        {`The due time to 5:00 PM: ${timeInfo.dueTimeToMin} `}
+                        <span className="text-red-500 font-bold">{`The due time to 5:00 PM: ${timeInfo.dueTimeToMin} `}</span>
                         <br />
                       </>
                     )}
                     {isDueTime2 && (
                       <>
-                        {`The due time to 5:10 PM: ${timeInfo.dueTimeToMax} `}
+                        <span className="text-red-500 font-bold">{`The due time to 5:10 PM: ${timeInfo.dueTimeToMax} `}</span>
                         <br />
                       </>
                     )}
