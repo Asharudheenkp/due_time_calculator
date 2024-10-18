@@ -36,15 +36,15 @@ const shifts = [
 
 const CalculatorText = () => {
   const [workEndTime, setWorkEndTime] = useState("00:00:00");
-  const [isOverTime6, setIsOverTime6] = useState(false);
-  const [isOverTime610, setIsOverTime610] = useState(false);
-  const [isDueTime6, setIsDueTime6] = useState(false);
-  const [isDueTime610, setIsDueTime610] = useState(false);
+  const [isOverTime, setIsOverTime] = useState(false);
+  const [isOverTime2, setIsOverTime2] = useState(false);
+  const [isDueTime, setIsDueTime] = useState(false);
+  const [isDueTime2, setIsDueTime2] = useState(false);
   const [timeInfo, setTimeInfo] = useState({
-    overTimeTo6: "00 hr 00 min 00 sec",
-    overTimeTo610: "00 hr 00 min 00 sec",
-    dueTimeTo6: "00 hr 00 min 00 sec",
-    dueTimeTo610: "00 hr 00 min 00 sec",
+    overTimeToMin: "00 hr 00 min 00 sec",
+    overTimeToMax: "00 hr 00 min 00 sec",
+    dueTimeToMin: "00 hr 00 min 00 sec",
+    dueTimeToMax: "00 hr 00 min 00 sec",
   });
   const [showShift, setShowShift] = useState(3);
 
@@ -114,27 +114,27 @@ const CalculatorText = () => {
     const { start: overTimeStart, end: overTimeEnd } =
       workMaxTimeLimits[shift] || workMaxTimeLimits[2];
 
-    const overtimeTo6 =
+    const overTimeToMin =
       (overTimeStart.getTime() - shiftEndTime.getTime()) / 1000;
-    const overtimeTo610 =
+    const overTimeToMax =
       (overTimeEnd.getTime() - shiftEndTime.getTime()) / 1000;
 
-    const dueTimeTo6 =
+    const dueTimeToMin =
       (shiftEndTime.getTime() - workMaxTimeLimits[shift].start.getTime()) /
       1000;
-    const dueTimeTo610 =
+    const dueTimeToMax =
       (shiftEndTime.getTime() - workMaxTimeLimits[shift].end.getTime()) / 1000;
 
-    overtimeTo6 > 0 ? setIsOverTime6(true) :  setIsOverTime6(false)
-    overtimeTo610 > 0 ? setIsOverTime610(true) :  setIsOverTime610(false)
-    dueTimeTo6 > 0 ?  setIsDueTime6(true) :  setIsDueTime6(false)
-    dueTimeTo610 > 0 ?  setIsDueTime610(true) :  setIsDueTime610(false)
+    overTimeToMin > 0 ? setIsOverTime(true) :  setIsOverTime(false)
+    overTimeToMax > 0 ? setIsOverTime2(true) :  setIsOverTime2(false)
+    dueTimeToMin > 0 ?  setIsDueTime(true) :  setIsDueTime(false)
+    dueTimeToMax > 0 ?  setIsDueTime2(true) :  setIsDueTime2(false)
 
     setTimeInfo({
-      overTimeTo6: overtimeTo6 > 0 ? formatTime(overtimeTo6) : "00 hr 00 min 00 sec",
-      overTimeTo610: overtimeTo610 > 0 ? formatTime(overtimeTo610) : "00 hr 00 min 00 sec",
-      dueTimeTo6: dueTimeTo6 > 0 ? formatTime(dueTimeTo6) : "00 hr 00 min 00 sec",
-      dueTimeTo610: dueTimeTo610 > 0 ? formatTime(dueTimeTo610) : "00 hr 00 min 00 sec",
+      overTimeToMin: overTimeToMin > 0 ? formatTime(overTimeToMin) : "00 hr 00 min 00 sec",
+      overTimeToMax: overTimeToMax > 0 ? formatTime(overTimeToMax) : "00 hr 00 min 00 sec",
+      dueTimeToMin: dueTimeToMin > 0 ? formatTime(dueTimeToMin) : "00 hr 00 min 00 sec",
+      dueTimeToMax: dueTimeToMax > 0 ? formatTime(dueTimeToMax) : "00 hr 00 min 00 sec",
     });
   };
 
@@ -218,27 +218,27 @@ const CalculatorText = () => {
               <p>
                 {showShift === 2 && (
                   <>
-                    {isOverTime6 && (
+                    {isOverTime && (
                       <>
-                        {`The over time to 6:00 PM: ${timeInfo.overTimeTo6} `}
+                        {`The over time to 6:00 PM: ${timeInfo.overTimeToMin} `}
                         <br />
                       </>
                     )}
-                    {isOverTime610 && (
+                    {isOverTime2 && (
                       <>
-                        {`The over time to 6:10 PM: ${timeInfo.overTimeTo610} `}
+                        {`The over time to 6:10 PM: ${timeInfo.overTimeToMax} `}
                         <br />
                       </>
                     )}
-                    {isDueTime6 && (
+                    {isDueTime && (
                       <>
-                        {`The due time to 6:00 PM: ${timeInfo.dueTimeTo6} `}
+                        {`The due time to 6:00 PM: ${timeInfo.dueTimeToMin} `}
                         <br />
                       </>
                     )}
-                    {isDueTime610 && (
+                    {isDueTime2 && (
                       <>
-                        {`The due time to 6:10 PM: ${timeInfo.dueTimeTo610} `}
+                        {`The due time to 6:10 PM: ${timeInfo.dueTimeToMax} `}
                         <br />
                       </>
                     )}
@@ -246,27 +246,27 @@ const CalculatorText = () => {
                 )}
                 {showShift === 1 && (
                   <>
-                    {isOverTime6 && (
+                    {isOverTime && (
                       <>
-                        {`The over time to 5:30 PM: ${timeInfo.overTimeTo6} `}
+                        {`The over time to 5:30 PM: ${timeInfo.overTimeToMin} `}
                         <br />
                       </>
                     )}
-                    {isOverTime610 && (
+                    {isOverTime2 && (
                       <>
-                        {`The over time to 5:40 PM: ${timeInfo.overTimeTo610} `}
+                        {`The over time to 5:40 PM: ${timeInfo.overTimeToMax} `}
                         <br />
                       </>
                     )}
-                    {isDueTime6 && (
+                    {isDueTime && (
                       <>
-                        {`The due time to 5:30 PM: ${timeInfo.dueTimeTo6} `}
+                        {`The due time to 5:30 PM: ${timeInfo.dueTimeToMin} `}
                         <br />
                       </>
                     )}
-                    {isDueTime610 && (
+                    {isDueTime2 && (
                       <>
-                        {`The due time to 5:40 PM: ${timeInfo.dueTimeTo610} `}
+                        {`The due time to 5:40 PM: ${timeInfo.dueTimeToMax} `}
                         <br />
                       </>
                     )}
@@ -274,27 +274,27 @@ const CalculatorText = () => {
                 )}
                 {showShift === 0 && (
                   <>
-                    {isOverTime6 && (
+                    {isOverTime && (
                       <>
-                        {`The over time to 5:00 PM: ${timeInfo.overTimeTo6} `}
+                        {`The over time to 5:00 PM: ${timeInfo.overTimeToMin} `}
                         <br />
                       </>
                     )}
-                    {isOverTime610 && (
+                    {isOverTime2 && (
                       <>
-                        {`The over time to 5:10 PM: ${timeInfo.overTimeTo610} `}
+                        {`The over time to 5:10 PM: ${timeInfo.overTimeToMax} `}
                         <br />
                       </>
                     )}
-                    {isDueTime6 && (
+                    {isDueTime && (
                       <>
-                        {`The due time to 5:00 PM: ${timeInfo.dueTimeTo6} `}
+                        {`The due time to 5:00 PM: ${timeInfo.dueTimeToMin} `}
                         <br />
                       </>
                     )}
-                    {isDueTime610 && (
+                    {isDueTime2 && (
                       <>
-                        {`The due time to 5:10 PM: ${timeInfo.dueTimeTo610} `}
+                        {`The due time to 5:10 PM: ${timeInfo.dueTimeToMax} `}
                         <br />
                       </>
                     )}
