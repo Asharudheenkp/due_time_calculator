@@ -33,8 +33,19 @@ const FormSchema = z.object({
   time: z.string({ required_error: "Please select a time " }),
 });
 const CalculatorBox = () => {
+  const [overTimeTo6, setOverTimeTo6] = useState("00 hr 00 min 00 sec");
+  const [overTimeTo610, setOverTimeTo610] = useState("00 hr 00 min 00 sec");
   const [dueTimeTo6, setDueTimeTo6] = useState("00 hr 00 min 00 sec");
   const [dueTimeTo610, setDueTimeTo610] = useState("00 hr 00 min 00 sec");
+  const [workEndTime, setWorkEndTime] = useState("00:00:00");
+  const [isOverTime6, setIsOverTime6] = useState(false);
+  const [isOverTime610, setIsOverTime610] = useState(false);
+  const [isDueTime6, setIsDueTime6] = useState(false);
+  const [isDueTime610, setIsDueTime610] = useState(false);
+
+
+  console.log(isOverTime610);
+  
   const [showShift, setShowShift] = useState(3);
 
   const shifts = [
@@ -62,6 +73,10 @@ const CalculatorBox = () => {
         });
         return;
       }
+      const currentTime = new Date();
+      const remainingTimeInSeconds = parseTimeString(remainingTime);
+      const endTime = new Date(currentTime.getTime() + remainingTimeInSeconds * 1000);
+      setWorkEndTime(endTime.toLocaleTimeString('en-US', { hour12: true }));
 
       calculateShiftTimeFromRemaining(
         remainingHours,
@@ -85,7 +100,7 @@ const CalculatorBox = () => {
     shiftEndTime.setMinutes(currentTime.getMinutes() + remainingMinutes);
     shiftEndTime.setSeconds(currentTime.getSeconds() + remainingSeconds);
 
-    const overtimeLimits = [
+    const workMaxTimeLimits = [
       {
         end: new Date(currentTime.setHours(17, 10, 0)),
         start: new Date(currentTime.setHours(17, 0, 0)),
@@ -100,25 +115,44 @@ const CalculatorBox = () => {
       },
     ];
 
-    const { start: overTimeStart, end: overTimeEnd } =
-      overtimeLimits[shift] || overtimeLimits[2];
+    const { start: overTimeStart, end: overTimeEnd } = workMaxTimeLimits[shift] || workMaxTimeLimits[2];
+  
+    const OverTimeTo6 = (overTimeStart.getTime() - shiftEndTime.getTime()) / 1000;
+    const OverTimeTo610 = (overTimeEnd.getTime() - shiftEndTime.getTime()) / 1000;
 
-    const OverTimeTo6 =
-      (overTimeStart.getTime() - shiftEndTime.getTime()) / 1000;
-    const OverTimeTo610 =
-      (overTimeEnd.getTime() - shiftEndTime.getTime()) / 1000;
+    OverTimeTo6 > 0 ? setIsOverTime6(true) : setIsOverTime6(false);
+    OverTimeTo610 > 0 ? setIsOverTime610(true) : setIsOverTime610(false);
 
-    const formatTime = (totalSeconds: number) => {
-      const hours = Math.floor(totalSeconds / 3600);
-      const minutes = Math.floor((totalSeconds % 3600) / 60);
-      const seconds = Math.floor(totalSeconds % 60);
-      return `${hours.toString().padStart(2, "0")} hr ${minutes
-        .toString()
-        .padStart(2, "0")} min ${seconds.toString().padStart(2, "0")} `;
-    };
+    isOverTime6 &&  setOverTimeTo6(formatTime(OverTimeTo6));
+    isOverTime610 &&  setOverTimeTo610(formatTime(OverTimeTo610));
 
-    setDueTimeTo6(formatTime(OverTimeTo6));
-    setDueTimeTo610(formatTime(OverTimeTo610));
+
+    const { start: dueTimeStart, end: dueTimeEnd } = workMaxTimeLimits[shift] || workMaxTimeLimits[2];
+  
+    const dueTimeTo6 = ( shiftEndTime.getTime() - dueTimeStart.getTime() ) / 1000;
+    const dueTimeTo610 = ( shiftEndTime.getTime() -dueTimeEnd.getTime() ) / 1000;
+
+    dueTimeTo6 > 0 ? setIsDueTime6(true) : setIsDueTime6(false);
+    dueTimeTo610 > 0 ? setIsDueTime610(true) : setIsDueTime610(false);
+
+    isDueTime6 &&  setDueTimeTo6(formatTime(dueTimeTo6));
+    isDueTime610 &&  setDueTimeTo610(formatTime(dueTimeTo610));
+  }
+
+  const formatTime = (totalSeconds: number) => {
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = Math.floor(totalSeconds % 60);
+    
+    const hoursString = hours > 0 ? `${hours.toString().padStart(2, "0")} hr ` : '00 hr ';
+    const minutesString = minutes > 0 ? `${minutes.toString().padStart(2, "0")} min ` : '00 min ';
+    const secondsString = seconds > 0 ? `${seconds.toString().padStart(2, "0")} sec` : '00 sec ';
+    return `${hoursString}${minutesString}${secondsString}`.trim();
+  };
+
+  const parseTimeString = (timeString: string) => {
+    const [hours, minutes, seconds] = timeString.split(':').map(Number);
+    return hours * 3600 + minutes * 60 + seconds; // convert to seconds
   }
 
   return (
@@ -131,15 +165,16 @@ const CalculatorBox = () => {
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className="w-2/3 space-y-6"
+              className=" space-y-6"
             >
               <FormField
                 control={form.control}
                 name="shift"
                 render={({ field }) => (
-                  <FormItem>
+                  <FormItem className="w-full sm:w-[350px]">
                     <FormLabel>Shift time</FormLabel>
                     <Select
+                      {...field}
                        onValueChange={(value) => {
                         field.onChange(value);  
                         setShowShift(Number(value));
@@ -181,28 +216,33 @@ const CalculatorBox = () => {
                   </FormItem>
                 )}
               />
+              <p>{`Work End Time: ${workEndTime}`}</p>
               <p>
-                {showShift === 2 && (
-                  <>
-                    The over time to 6:00 PM: {dueTimeTo6}
-                    <br />
-                    The over time to 6:10 PM: {dueTimeTo610}
-                  </>
-                )}
-                {showShift === 1 && (
-                  <>
-                    The over time to 5:30 PM: {dueTimeTo6}
-                    <br />
-                    The over time to 5:40 PM: {dueTimeTo610}
-                  </>
-                )}
-                {showShift === 0 && (
-                  <>
-                    The over time to 5:00 PM: {dueTimeTo6}
-                    <br />
-                    The over time to 5:10 PM: {dueTimeTo610}
-                  </>
-                )}
+
+                    {(isOverTime6 && showShift === 2)  && `The over time to 6:00 PM: ${overTimeTo6}` }
+                    {/* <br /> */}
+                    {(isOverTime610 && showShift === 2) &&`The over time to 6:10 PM: ${overTimeTo610}`}
+                
+                    {(isOverTime6 && showShift === 1) && `The over time to 5:30 PM: ${overTimeTo6}`}
+                    {/* <br /> */}
+                    {(isOverTime610 && showShift === 1) &&`The over time to 5:40 PM: ${overTimeTo610}`}
+
+                    {(isOverTime6 && showShift === 0) && `The over time to 5:00 PM: ${overTimeTo6}`}
+                    {/* <br /> */}
+                    {(isOverTime610 && showShift === 0) &&`The over time to 5:10 PM: ${overTimeTo610}`}
+
+                    {(isDueTime6 && showShift === 2)  && `The due time to 6:00 PM: ${dueTimeTo6}`}
+                    {/* <br /> */}
+                    {(isDueTime610 && showShift === 2) &&`The due time to 6:10 PM: ${dueTimeTo610}`}
+                
+                    {(isDueTime6 && showShift === 1) && `The due time to 5:30 PM: ${dueTimeTo6}`}
+                    {/* <br /> */}
+                    {(isDueTime610 && showShift === 1) &&`The due time to 5:40 PM: ${dueTimeTo610}`}
+
+                    {(isDueTime6 && showShift === 0) && `The due time to 5:00 PM: ${dueTimeTo6}`}
+                    {/* <br /> */}
+                    {(isDueTime610 && showShift === 0) &&`The due time to 5:10 PM: ${dueTimeTo610}`}
+
               </p>
 
               <Button type="submit">Calculate</Button>
