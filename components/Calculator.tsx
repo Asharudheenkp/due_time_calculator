@@ -1,11 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -32,33 +27,32 @@ const FormSchema = z.object({
   shift: z.string({ required_error: "Please select a shift." }),
   time: z.string({ required_error: "Please select a time " }),
 });
-const CalculatorBox = () => {
-  const [overTimeTo6, setOverTimeTo6] = useState("00 hr 00 min 00 sec");
-  const [overTimeTo610, setOverTimeTo610] = useState("00 hr 00 min 00 sec");
-  const [dueTimeTo6, setDueTimeTo6] = useState("00 hr 00 min 00 sec");
-  const [dueTimeTo610, setDueTimeTo610] = useState("00 hr 00 min 00 sec");
+
+const shifts = [
+  { value: 0, label: "08:00 AM - 05:00 PM" },
+  { value: 1, label: "08:30 AM - 05:30 PM" },
+  { value: 2, label: "09:00 AM - 06:00 PM" },
+];
+
+const Calculator = () => {
   const [workEndTime, setWorkEndTime] = useState("00:00:00");
-  const [isOverTime6, setIsOverTime6] = useState(false);
-  const [isOverTime610, setIsOverTime610] = useState(false);
-  const [isDueTime6, setIsDueTime6] = useState(false);
-  const [isDueTime610, setIsDueTime610] = useState(false);
-
-
-  console.log(isOverTime610);
-  
+  const [isOverTime, setIsOverTime] = useState(false);
+  const [isOverTime2, setIsOverTime2] = useState(false);
+  const [isDueTime, setIsDueTime] = useState(false);
+  const [isDueTime2, setIsDueTime2] = useState(false);
+  const [timeInfo, setTimeInfo] = useState({
+    overTimeToMin: "00 hr 00 min 00 sec",
+    overTimeToMax: "00 hr 00 min 00 sec",
+    dueTimeToMin: "00 hr 00 min 00 sec",
+    dueTimeToMax: "00 hr 00 min 00 sec",
+  });
   const [showShift, setShowShift] = useState(3);
 
-  const shifts = [
-    { value: 0, label: "08:00 AM - 05:00 PM" },
-    { value: 1, label: "08:30 AM - 05:30 PM" },
-    { value: 2, label: "09:00 AM - 06:00 PM" },
-  ];
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
   });
 
-
-  function onSubmit(data: z.infer<typeof FormSchema>) {
+  const onSubmit = (data: z.infer<typeof FormSchema>) => {
     const { time: remainingTime, shift } = data;
 
     if (remainingTime) {
@@ -73,29 +67,31 @@ const CalculatorBox = () => {
         });
         return;
       }
+
       const currentTime = new Date();
       const remainingTimeInSeconds = parseTimeString(remainingTime);
-      const endTime = new Date(currentTime.getTime() + remainingTimeInSeconds * 1000);
-      setWorkEndTime(endTime.toLocaleTimeString('en-US', { hour12: true }));
+      const endTime = new Date(
+        currentTime.getTime() + remainingTimeInSeconds * 1000
+      );
+      setWorkEndTime(endTime.toLocaleTimeString("en-US", { hour12: true }));
 
-      calculateShiftTimeFromRemaining(
+      calculateShiftTimes(
         remainingHours,
         remainingMinutes,
         remainingSeconds,
         Number(shift)
       );
     }
-  }
+  };
 
-  function calculateShiftTimeFromRemaining(
-    remainingHours: number,
-    remainingMinutes: number,
-    remainingSeconds: number,
+  const calculateShiftTimes = (
+    remainingHours : any,
+    remainingMinutes : any,
+    remainingSeconds : any,
     shift: number
-  ) {
+  ) => {
     const currentTime = new Date();
     const shiftEndTime = new Date(currentTime);
-
     shiftEndTime.setHours(currentTime.getHours() + remainingHours);
     shiftEndTime.setMinutes(currentTime.getMinutes() + remainingMinutes);
     shiftEndTime.setSeconds(currentTime.getSeconds() + remainingSeconds);
@@ -105,7 +101,7 @@ const CalculatorBox = () => {
         end: new Date(currentTime.setHours(17, 10, 0)),
         start: new Date(currentTime.setHours(17, 0, 0)),
       },
-       {
+      {
         end: new Date(currentTime.setHours(17, 40, 0)),
         start: new Date(currentTime.setHours(17, 30, 0)),
       },
@@ -115,45 +111,47 @@ const CalculatorBox = () => {
       },
     ];
 
-    const { start: overTimeStart, end: overTimeEnd } = workMaxTimeLimits[shift] || workMaxTimeLimits[2];
-  
-    const OverTimeTo6 = (overTimeStart.getTime() - shiftEndTime.getTime()) / 1000;
-    const OverTimeTo610 = (overTimeEnd.getTime() - shiftEndTime.getTime()) / 1000;
+    const { start: overTimeStart, end: overTimeEnd } =
+      workMaxTimeLimits[shift] || workMaxTimeLimits[2];
 
-    OverTimeTo6 > 0 ? setIsOverTime6(true) : setIsOverTime6(false);
-    OverTimeTo610 > 0 ? setIsOverTime610(true) : setIsOverTime610(false);
+    const overTimeToMin =
+      (overTimeStart.getTime() - shiftEndTime.getTime()) / 1000;
+    const overTimeToMax =
+      (overTimeEnd.getTime() - shiftEndTime.getTime()) / 1000;
 
-    isOverTime6 &&  setOverTimeTo6(formatTime(OverTimeTo6));
-    isOverTime610 &&  setOverTimeTo610(formatTime(OverTimeTo610));
+    const dueTimeToMin =
+      (shiftEndTime.getTime() - workMaxTimeLimits[shift].start.getTime()) /
+      1000;
+    const dueTimeToMax =
+      (shiftEndTime.getTime() - workMaxTimeLimits[shift].end.getTime()) / 1000;
 
+    overTimeToMin > 0 ? setIsOverTime(true) :  setIsOverTime(false)
+    overTimeToMax > 0 ? setIsOverTime2(true) :  setIsOverTime2(false)
+    dueTimeToMin > 0 ?  setIsDueTime(true) :  setIsDueTime(false)
+    dueTimeToMax > 0 ?  setIsDueTime2(true) :  setIsDueTime2(false)
 
-    const { start: dueTimeStart, end: dueTimeEnd } = workMaxTimeLimits[shift] || workMaxTimeLimits[2];
-  
-    const dueTimeTo6 = ( shiftEndTime.getTime() - dueTimeStart.getTime() ) / 1000;
-    const dueTimeTo610 = ( shiftEndTime.getTime() -dueTimeEnd.getTime() ) / 1000;
-
-    dueTimeTo6 > 0 ? setIsDueTime6(true) : setIsDueTime6(false);
-    dueTimeTo610 > 0 ? setIsDueTime610(true) : setIsDueTime610(false);
-
-    isDueTime6 &&  setDueTimeTo6(formatTime(dueTimeTo6));
-    isDueTime610 &&  setDueTimeTo610(formatTime(dueTimeTo610));
-  }
+    setTimeInfo({
+      overTimeToMin: overTimeToMin > 0 ? formatTime(overTimeToMin) : "00 hr 00 min 00 sec",
+      overTimeToMax: overTimeToMax > 0 ? formatTime(overTimeToMax) : "00 hr 00 min 00 sec",
+      dueTimeToMin: dueTimeToMin > 0 ? formatTime(dueTimeToMin) : "00 hr 00 min 00 sec",
+      dueTimeToMax: dueTimeToMax > 0 ? formatTime(dueTimeToMax) : "00 hr 00 min 00 sec",
+    });
+  };
 
   const formatTime = (totalSeconds: number) => {
     const hours = Math.floor(totalSeconds / 3600);
     const minutes = Math.floor((totalSeconds % 3600) / 60);
     const seconds = Math.floor(totalSeconds % 60);
-    
-    const hoursString = hours > 0 ? `${hours.toString().padStart(2, "0")} hr ` : '00 hr ';
-    const minutesString = minutes > 0 ? `${minutes.toString().padStart(2, "0")} min ` : '00 min ';
-    const secondsString = seconds > 0 ? `${seconds.toString().padStart(2, "0")} sec` : '00 sec ';
-    return `${hoursString}${minutesString}${secondsString}`.trim();
+
+    return `${hours.toString().padStart(2, "0")} hr ${minutes
+      .toString()
+      .padStart(2, "0")} min ${seconds.toString().padStart(2, "0")} sec`.trim();
   };
 
   const parseTimeString = (timeString: string) => {
-    const [hours, minutes, seconds] = timeString.split(':').map(Number);
+    const [hours, minutes, seconds] = timeString.split(":").map(Number);
     return hours * 3600 + minutes * 60 + seconds; // convert to seconds
-  }
+  };
 
   return (
     <div className="mt-9 w-[80%] mx-auto">
@@ -163,10 +161,7 @@ const CalculatorBox = () => {
         </CardHeader>
         <CardContent>
           <Form {...form}>
-            <form
-              onSubmit={form.handleSubmit(onSubmit)}
-              className=" space-y-6"
-            >
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <FormField
                 control={form.control}
                 name="shift"
@@ -175,8 +170,8 @@ const CalculatorBox = () => {
                     <FormLabel>Shift time</FormLabel>
                     <Select
                       {...field}
-                       onValueChange={(value) => {
-                        field.onChange(value);  
+                      onValueChange={(value) => {
+                        field.onChange(value);
                         setShowShift(Number(value));
                       }}
                       defaultValue={field.value}
@@ -187,9 +182,12 @@ const CalculatorBox = () => {
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        {shifts.map((field) => (
-                          <SelectItem value={String(field.value)}>
-                            {field.label}
+                        {shifts.map((shift) => (
+                          <SelectItem
+                            key={shift.value}
+                            value={String(shift.value)}
+                          >
+                            {shift.label}
                           </SelectItem>
                         ))}
                       </SelectContent>
@@ -218,34 +216,93 @@ const CalculatorBox = () => {
               />
               <p>{`Work End Time: ${workEndTime}`}</p>
               <p>
-
-                    {(isOverTime6 && showShift === 2)  && `The over time to 6:00 PM: ${overTimeTo6}` }
-                    {/* <br /> */}
-                    {(isOverTime610 && showShift === 2) &&`The over time to 6:10 PM: ${overTimeTo610}`}
-                
-                    {(isOverTime6 && showShift === 1) && `The over time to 5:30 PM: ${overTimeTo6}`}
-                    {/* <br /> */}
-                    {(isOverTime610 && showShift === 1) &&`The over time to 5:40 PM: ${overTimeTo610}`}
-
-                    {(isOverTime6 && showShift === 0) && `The over time to 5:00 PM: ${overTimeTo6}`}
-                    {/* <br /> */}
-                    {(isOverTime610 && showShift === 0) &&`The over time to 5:10 PM: ${overTimeTo610}`}
-
-                    {(isDueTime6 && showShift === 2)  && `The due time to 6:00 PM: ${dueTimeTo6}`}
-                    {/* <br /> */}
-                    {(isDueTime610 && showShift === 2) &&`The due time to 6:10 PM: ${dueTimeTo610}`}
-                
-                    {(isDueTime6 && showShift === 1) && `The due time to 5:30 PM: ${dueTimeTo6}`}
-                    {/* <br /> */}
-                    {(isDueTime610 && showShift === 1) &&`The due time to 5:40 PM: ${dueTimeTo610}`}
-
-                    {(isDueTime6 && showShift === 0) && `The due time to 5:00 PM: ${dueTimeTo6}`}
-                    {/* <br /> */}
-                    {(isDueTime610 && showShift === 0) &&`The due time to 5:10 PM: ${dueTimeTo610}`}
-
+                {showShift === 2 && (
+                  <>
+                    {isOverTime && (
+                      <>
+                        {`The over time to 6:00 PM: ${timeInfo.overTimeToMin} `}
+                        <br />
+                      </>
+                    )}
+                    {isOverTime2 && (
+                      <>
+                        {`The over time to 6:10 PM: ${timeInfo.overTimeToMax} `}
+                        <br />
+                      </>
+                    )}
+                    {isDueTime && (
+                      <>
+                       <span className="text-red-500 font-bold">{`The due time to 6:00 PM: ${timeInfo.dueTimeToMin} `}</span>
+                        <br />
+                      </>
+                    )}
+                    {isDueTime2 && (
+                      <>
+                         <span className="text-red-500 font-bold">{`The due time to 6:10 PM: ${timeInfo.dueTimeToMax} `}</span>
+                        <br />
+                      </>
+                    )}
+                  </>
+                )}
+                {showShift === 1 && (
+                  <>
+                    {isOverTime && (
+                      <>
+                        {`The over time to 5:30 PM: ${timeInfo.overTimeToMin} `}
+                        <br />
+                      </>
+                    )}
+                    {isOverTime2 && (
+                      <>
+                        {`The over time to 5:40 PM: ${timeInfo.overTimeToMax} `}
+                        <br />
+                      </>
+                    )}
+                    {isDueTime && (
+                      <>
+                        <span className="text-red-500 font-bold">{`The due time to 5:30 PM: ${timeInfo.dueTimeToMin} `}</span>
+                        <br />
+                      </>
+                    )}
+                    {isDueTime2 && (
+                      <>
+                         <span className="text-red-500 font-bold">{`The due time to 5:40 PM: ${timeInfo.dueTimeToMax} `}</span>
+                        <br />
+                      </>
+                    )}
+                  </>
+                )}
+                {showShift === 0 && (
+                  <>
+                    {isOverTime && (
+                      <>
+                        {`The over time to 5:00 PM: ${timeInfo.overTimeToMin} `}
+                        <br />
+                      </>
+                    )}
+                    {isOverTime2 && (
+                      <>
+                        {`The over time to 5:10 PM: ${timeInfo.overTimeToMax} `}
+                        <br />
+                      </>
+                    )}
+                    {isDueTime && (
+                      <>
+                        <span className="text-red-500 font-bold">{`The due time to 5:00 PM: ${timeInfo.dueTimeToMin} `}</span>
+                        <br />
+                      </>
+                    )}
+                    {isDueTime2 && (
+                      <>
+                        <span className="text-red-500 font-bold">{`The due time to 5:10 PM: ${timeInfo.dueTimeToMax} `}</span>
+                        <br />
+                      </>
+                    )}
+                  </>
+                )}
               </p>
 
-              <Button type="submit">Calculate</Button>
+              <Button type="submit">Submit</Button>
             </form>
           </Form>
         </CardContent>
@@ -254,4 +311,4 @@ const CalculatorBox = () => {
   );
 };
 
-export default CalculatorBox;
+export default Calculator;
