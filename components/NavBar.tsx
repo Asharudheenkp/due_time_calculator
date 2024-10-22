@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
       <nav className="w-[80%] mx-auto pt-8">
         <div className="flex justify-between items-center">
-          <h1 className="text-5xl">⏳</h1>
+          <h1 className="text-5xl animate-spin-slow">⏳</h1>
           <DarkModeToggler />
         </div>
       </nav>
