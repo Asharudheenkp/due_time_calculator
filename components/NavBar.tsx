@@ -8,7 +8,7 @@ const NavBar = () => {
         <div className="flex justify-between items-center">
         <Link href={'/'}> <h1 className="text-5xl animate-spin-slow">⏳</h1></Link>
           <div className="flex items-center gap-3">
-            <Link href={'/games'}>Games</Link>
+            {/* <Link href={'/games'}>Games</Link> */}
             <DarkModeToggler />
           </div>
         </div>
