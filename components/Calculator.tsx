@@ -154,7 +154,6 @@ const Calculator = () => {
   };
 
   return (
-    <div className="mt-9 w-[80%] mx-auto">
       <Card>
         <CardHeader>
           <CardTitle>Enter Due time </CardTitle>
@@ -307,7 +306,6 @@ const Calculator = () => {
           </Form>
         </CardContent>
       </Card>
-    </div>
   );
 };
 

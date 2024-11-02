@@ -41,7 +41,7 @@ const Game: React.FC = () => {
   };
 
   return (
-    <div className="mt-9 w-[80%] mx-auto">
+    <div>
          <Card>
             <CardHeader>
             <CardTitle>Tic-Tac-Toe </CardTitle>
