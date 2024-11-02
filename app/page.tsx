@@ -1,15 +1,11 @@
-
 import Calculator from "@/components/Calculator";
-import CalculatorText from "@/components/CalculatorTest";
-import NavBar from "@/components/NavBar";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-    <NavBar/>
+    <div className="grid grid-cols-1 md:grid-cols-2">
     <Calculator/>
-    {/* <CalculatorText/> */}
+    </div>
     </>
   );
 }

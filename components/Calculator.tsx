@@ -155,7 +155,7 @@ const Calculator = () => {
 
   return (
     <div className="mt-9 w-[80%] mx-auto">
-      <Card className="w-full">
+      <Card>
         <CardHeader>
           <CardTitle>Enter Due time </CardTitle>
         </CardHeader>
@@ -166,7 +166,7 @@ const Calculator = () => {
                 control={form.control}
                 name="shift"
                 render={({ field }) => (
-                  <FormItem className="w-full sm:w-[350px]">
+                  <FormItem className="w-full ">
                     <FormLabel>Shift time</FormLabel>
                     <Select
                       {...field}
@@ -206,7 +206,7 @@ const Calculator = () => {
                     <FormControl>
                       <Input
                         placeholder="eg: 05:14:22"
-                        className="w-full sm:w-[350px]"
+                        className="w-full "
                         {...field}
                       />
                     </FormControl>
