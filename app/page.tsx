@@ -1,10 +1,12 @@
+import AdviceOfTheSecond from "@/components/AdviceOfTheSecond";
 import Calculator from "@/components/Calculator";
 
 export default function Home() {
   return (
     <div className="mt-9 w-[80%] mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <Calculator/>
+        <AdviceOfTheSecond/>
       </div>
     </div>
   );
