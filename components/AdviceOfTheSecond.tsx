@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const AdviceOfTheSecond = async () => {
-  const res = await fetch("https://api.adviceslip.com/advice",{ cache: 'no-store' });
+  const res = await fetch("https://api.adviceslip.com/advice");
   const second = await res.json();
   return (
     <Card className="md:h-[385px] overflow-scroll">
