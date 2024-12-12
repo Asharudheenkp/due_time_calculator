@@ -87,7 +87,7 @@ const AdviceOfTheSecond = () => {
   return (
     <Card className="md:h-[385px] overflow-scroll">
       <CardHeader>
-        <CardTitle className="font-mono">😇 Advice of the day</CardTitle>
+        <CardTitle className="font-mono">😇 Today's Advice for you</CardTitle>
       </CardHeader>
       <CardContent>
         <p className="text-2xl mt-10 max-md:mb-10 font-thin font-mono leading-9 italic">
