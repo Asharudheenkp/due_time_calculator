@@ -12,6 +12,21 @@ body {
   }
 }
 
+.pointer-radius {
+  position: fixed;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(253, 253, 253) 60%, rgba(0, 0, 0, 1) 100%);
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  transition: width 0.15s ease, height 0.15s ease;
+}
+
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
