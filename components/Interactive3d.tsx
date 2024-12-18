@@ -14,15 +14,13 @@ import { Robot } from "./Robot";
 const Interactive3d = ({model}: any) => {
   const spotlightTarget = useRef();
   return (
-    // <Card className="md:h-[400px] overflow-hidden">
-    //   <CardContent className="p-0">
-    //     {" "}
+
         <div style={{ width: "100%", height: "400px" }}>
           <Canvas >
             <ambientLight intensity={0.5} />
 
             <directionalLight
-              position={[15, 20, 10]} // sunlight position
+              position={[15, 20, 10]}
               intensity={3.5}
               castShadow
               shadow-mapSize-width={2048}
@@ -64,8 +62,6 @@ const Interactive3d = ({model}: any) => {
 
           </Canvas>
         </div>
-    //   </CardContent>
-    // </Card>
   );
 };
 

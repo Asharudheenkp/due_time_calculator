@@ -8,6 +8,7 @@ Title: 2016 Ferrari F12tdf
 
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import * as THREE from 'three'
 
 export function Car(props: any) {
   const { nodes, materials } = useGLTF('/2016_ferrari_f12tdf.glb')
@@ -19,8 +20,7 @@ export function Car(props: any) {
             castShadow
             receiveShadow
             geometry={
-              nodes.Ferrari_F12_cardetach_bumper_B_5_tiled_carbon_LOD2_Ferrari_F12_carDefault1_0
-                .geometry
+              (nodes.Ferrari_F12_cardetach_bumper_B_5_tiled_carbon_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
             }
             material={materials.Ferrari_F12_carDefault1}
           />
@@ -28,8 +28,7 @@ export function Car(props: any) {
             castShadow
             receiveShadow
             geometry={
-              nodes.Ferrari_F12_cardetach_bumper_B_5_details_normal_LOD2_Ferrari_F12_carDefault1_0
-                .geometry
+              (nodes.Ferrari_F12_cardetach_bumper_B_5_details_normal_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
             }
             material={materials.Ferrari_F12_carDefault1}
           />
@@ -38,7 +37,7 @@ export function Car(props: any) {
           castShadow
           receiveShadow
           geometry={
-            nodes.Ferrari_F12_carsteering_wheel_details_LOD2_Ferrari_F12_carDefault1_0.geometry
+            (nodes.Ferrari_F12_carsteering_wheel_details_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
           }
           material={materials.Ferrari_F12_carDefault1}
           position={[0, -1.537, 0.513]}
@@ -46,200 +45,200 @@ export function Car(props: any) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carwheelBL_tire_tires_LOD2_tyre_0.geometry}
+          geometry={(nodes.Ferrari_F12_carwheelBL_tire_tires_LOD2_tyre_0 as THREE.Mesh).geometry}
           material={materials.tyre}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={
-            nodes.Ferrari_F12_carwheelBL_details_normal_LOD2_Ferrari_F12_carDefault1_0.geometry
+            (nodes.Ferrari_F12_carwheelBL_details_normal_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
           }
           material={materials.Ferrari_F12_carDefault1}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carwheelBL_rims_LOD2_rims_0.geometry}
+          geometry={(nodes.Ferrari_F12_carwheelBL_rims_LOD2_rims_0 as THREE.Mesh).geometry}
           material={materials.rims}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carwheelBL_caliper_calipers_LOD6_calip_0.geometry}
+          geometry={(nodes.Ferrari_F12_carwheelBL_caliper_calipers_LOD6_calip_0 as THREE.Mesh).geometry}
           material={materials.calip}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={
-            nodes.Ferrari_F12_carwheelBR_details_normal_LOD2_Ferrari_F12_carDefault1_0.geometry
+            (nodes.Ferrari_F12_carwheelBR_details_normal_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
           }
           material={materials.Ferrari_F12_carDefault1}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carwheelBR_rims_LOD2_rims_0.geometry}
+          geometry={(nodes.Ferrari_F12_carwheelBR_rims_LOD2_rims_0 as THREE.Mesh).geometry}
           material={materials.rims}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carwheelBR_tire_tires_LOD2_tyre_0.geometry}
+          geometry={(nodes.Ferrari_F12_carwheelBR_tire_tires_LOD2_tyre_0 as THREE.Mesh).geometry}
           material={materials.tyre}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carwheelBR_caliper_calipers_LOD6_calip_0.geometry}
+          geometry={(nodes.Ferrari_F12_carwheelBR_caliper_calipers_LOD6_calip_0 as THREE.Mesh).geometry}
           material={materials.calip}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={
-            nodes.Ferrari_F12_carwheelFL_details_normal_LOD2_Ferrari_F12_carDefault1_0.geometry
+            (nodes.Ferrari_F12_carwheelFL_details_normal_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
           }
           material={materials.Ferrari_F12_carDefault1}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carwheelFL_rims_LOD2_rims_0.geometry}
+          geometry={(nodes.Ferrari_F12_carwheelFL_rims_LOD2_rims_0 as THREE.Mesh).geometry}
           material={materials.rims}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carwheelFL_tire_tires_LOD2_tyre_0.geometry}
+          geometry={(nodes.Ferrari_F12_carwheelFL_tire_tires_LOD2_tyre_0 as THREE.Mesh).geometry}
           material={materials.tyre}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carwheelFL_caliper_calipers_LOD6_calip_0.geometry}
+          geometry={(nodes.Ferrari_F12_carwheelFL_caliper_calipers_LOD6_calip_0 as THREE.Mesh).geometry}
           material={materials.calip}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carwheelFR_tire_tires_LOD2_tyre_0.geometry}
+          geometry={(nodes.Ferrari_F12_carwheelFR_tire_tires_LOD2_tyre_0 as THREE.Mesh).geometry}
           material={materials.tyre}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={
-            nodes.Ferrari_F12_carwheelFR_details_normal_LOD2_Ferrari_F12_carDefault1_0.geometry
+            (nodes.Ferrari_F12_carwheelFR_details_normal_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
           }
           material={materials.Ferrari_F12_carDefault1}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carwheelFR_rims_LOD2_rims_0.geometry}
+          geometry={(nodes.Ferrari_F12_carwheelFR_rims_LOD2_rims_0 as THREE.Mesh).geometry}
           material={materials.rims}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carwheelFR_caliper_calipers_LOD6_calip_0.geometry}
+          geometry={(nodes.Ferrari_F12_carwheelFR_caliper_calipers_LOD6_calip_0 as THREE.Mesh).geometry}
           material={materials.calip}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={
-            nodes.Ferrari_F12_carchassis_tiled_carbon_LOD2_Ferrari_F12_carDefault1_0.geometry
+            (nodes.Ferrari_F12_carchassis_tiled_carbon_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
           }
           material={materials.Ferrari_F12_carDefault1}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carchassis_tiled_carbon_LOD2_grid_0.geometry}
+          geometry={(nodes.Ferrari_F12_carchassis_tiled_carbon_LOD2_grid_0 as THREE.Mesh).geometry}
           material={materials.grid}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carchassis_details_LOD2_Ferrari_F12_carDefault1_0.geometry}
+          geometry={(nodes.Ferrari_F12_carchassis_details_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry}
           material={materials.Ferrari_F12_carDefault1}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carchassis_details_LOD2_plastic_0.geometry}
+          geometry={(nodes.Ferrari_F12_carchassis_details_LOD2_plastic_0 as THREE.Mesh).geometry}
           material={materials.plastic}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={
-            nodes.Ferrari_F12_carchassis_details_normal_LOD2_Ferrari_F12_carDefault1_0.geometry
+            (nodes.Ferrari_F12_carchassis_details_normal_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
           }
           material={materials.Ferrari_F12_carDefault1}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carchassis_details_normal_LOD2_plastic_0.geometry}
+          geometry={(nodes.Ferrari_F12_carchassis_details_normal_LOD2_plastic_0 as THREE.Mesh).geometry}
           material={materials.plastic}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carchassis_underside_LOD2_under_0.geometry}
+          geometry={(nodes.Ferrari_F12_carchassis_underside_LOD2_under_0 as THREE.Mesh).geometry}
           material={materials.under}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carchassis_carpaint_LOD2_carpaint_0.geometry}
+          geometry={(nodes.Ferrari_F12_carchassis_carpaint_LOD2_carpaint_0 as THREE.Mesh).geometry}
           material={materials.carpaint}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carchassis_tiled_grid_03_LOD2_grid_0.geometry}
+          geometry={(nodes.Ferrari_F12_carchassis_tiled_grid_03_LOD2_grid_0 as THREE.Mesh).geometry}
           material={materials.grid}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carchassis_carpaint_custom02_LOD2_carpaint_0.geometry}
+          geometry={(nodes.Ferrari_F12_carchassis_carpaint_custom02_LOD2_carpaint_0 as THREE.Mesh).geometry}
           material={materials.carpaint}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carchassis_carpaint_custom01_LOD2_carpaint_0.geometry}
+          geometry={(nodes.Ferrari_F12_carchassis_carpaint_custom01_LOD2_carpaint_0 as THREE.Mesh).geometry}
           material={materials.carpaint}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carchassis_tiled_grid_02_LOD2_grid_02_0.geometry}
+          geometry={(nodes.Ferrari_F12_carchassis_tiled_grid_02_LOD2_grid_02_0 as THREE.Mesh).geometry}
           material={materials.grid_02}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carchassis_tiled_grid_LOD2_grid_0.geometry}
+          geometry={(nodes.Ferrari_F12_carchassis_tiled_grid_LOD2_grid_0 as THREE.Mesh).geometry}
           material={materials.grid}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carchassis_licenseplate_LOD2_plate_0.geometry}
+          geometry={(nodes.Ferrari_F12_carchassis_licenseplate_LOD2_plate_0 as THREE.Mesh).geometry}
           material={materials.plate}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={
-            nodes.Ferrari_F12_carchassis_emissive_ID_rear_LOD2_Ferrari_F12_carDefault1_0.geometry
+            (nodes.Ferrari_F12_carchassis_emissive_ID_rear_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
           }
           material={materials.Ferrari_F12_carDefault1}
         />
@@ -247,8 +246,7 @@ export function Car(props: any) {
           castShadow
           receiveShadow
           geometry={
-            nodes.Ferrari_F12_carchassis_emissive_ID_thirdlight_LOD2_Ferrari_F12_carDefault1_0
-              .geometry
+            (nodes.Ferrari_F12_carchassis_emissive_ID_thirdlight_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
           }
           material={materials.Ferrari_F12_carDefault1}
         />
@@ -256,8 +254,7 @@ export function Car(props: any) {
           castShadow
           receiveShadow
           geometry={
-            nodes.Ferrari_F12_cardetach_bumper_F_5_tiled_carbon_LOD2_Ferrari_F12_carDefault1_0
-              .geometry
+            (nodes.Ferrari_F12_cardetach_bumper_F_5_tiled_carbon_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
           }
           material={materials.Ferrari_F12_carDefault1}
         />
@@ -265,7 +262,7 @@ export function Car(props: any) {
           castShadow
           receiveShadow
           geometry={
-            nodes.Ferrari_F12_cardetach_bumper_F_5_details_LOD2_Ferrari_F12_carDefault1_0.geometry
+            (nodes.Ferrari_F12_cardetach_bumper_F_5_details_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
           }
           material={materials.Ferrari_F12_carDefault1}
         />
@@ -273,39 +270,38 @@ export function Car(props: any) {
           castShadow
           receiveShadow
           geometry={
-            nodes.Ferrari_F12_cardetach_bumper_F_5_details_normal_LOD2_Ferrari_F12_carDefault1_0
-              .geometry
+            (nodes.Ferrari_F12_cardetach_bumper_F_5_details_normal_LOD2_Ferrari_F12_carDefault1_0 as THREE.Mesh).geometry
           }
           material={materials.Ferrari_F12_carDefault1}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_cardetach_bumper_F_5_carpaint_LOD2_carpaint_0.geometry}
+          geometry={(nodes.Ferrari_F12_cardetach_bumper_F_5_carpaint_LOD2_carpaint_0 as THREE.Mesh).geometry}
           material={materials.carpaint}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_cardetach_bumper_F_5_tiled_grid_LOD2_grid_0.geometry}
+          geometry={(nodes.Ferrari_F12_cardetach_bumper_F_5_tiled_grid_LOD2_grid_0 as THREE.Mesh).geometry}
           material={materials.grid}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_cardetach_bumper_F_5_licenseplate_LOD2_plate_0.geometry}
+          geometry={(nodes.Ferrari_F12_cardetach_bumper_F_5_licenseplate_LOD2_plate_0 as THREE.Mesh).geometry}
           material={materials.plate}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carglass_glass_LOD2_glass_0.geometry}
+          geometry={(nodes.Ferrari_F12_carglass_glass_LOD2_glass_0 as THREE.Mesh).geometry}
           material={materials.glass}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Ferrari_F12_carglass_glass_LOD2_phong9_0.geometry}
+          geometry={(nodes.Ferrari_F12_carglass_glass_LOD2_phong9_0 as THREE.Mesh).geometry}
           material={materials.phong9}
         />
       </group>

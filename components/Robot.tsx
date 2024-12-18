@@ -1,15 +1,16 @@
+
 import React, { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { useGLTF } from '@react-three/drei'
+import * as THREE from 'three'
 
-export function Robot(props) {
+export function Robot(props: any) {
   const { nodes, materials } = useGLTF('/utility_robot.glb')
-  const robotRef = useRef()
+  const robotRef = useRef<THREE.Group>(null) 
 
-  // Use the useFrame hook to update rotation every frame
   useFrame(() => {
     if (robotRef.current) {
-      robotRef.current.rotation.y += 0.01 // Rotate around the Y-axis
+      robotRef.current.rotation.y += 0.01 
     }
   })
 
@@ -20,13 +21,13 @@ export function Robot(props) {
           <mesh
             castShadow
             receiveShadow
-            geometry={nodes.Object_2.geometry}
+            geometry={(nodes.Object_2 as THREE.Mesh).geometry}
             material={materials.Box001_mtl}
           />
           <mesh
             castShadow
             receiveShadow
-            geometry={nodes.Object_3.geometry}
+            geometry={(nodes.Object_3 as THREE.Mesh).geometry}
             material={materials.Box001_mtl}
           />
         </group>
@@ -36,6 +37,45 @@ export function Robot(props) {
 }
 
 useGLTF.preload('/utility_robot.glb')
+
+// import React, { useRef } from 'react'
+// import { useFrame } from '@react-three/fiber'
+// import { useGLTF } from '@react-three/drei'
+
+// export function Robot(props: any) {
+//   const { nodes, materials } = useGLTF('/utility_robot.glb')
+//   const robotRef = useRef()
+
+//   // Use the useFrame hook to update rotation every frame
+//   useFrame(() => {
+//     if (robotRef.current) {
+//       robotRef.current.rotation.y += 0.01 // Rotate around the Y-axis
+//     }
+//   })
+
+//   return (
+//     <group {...props} dispose={null} ref={robotRef}>
+//       <group scale={0.08}>
+//         <group rotation={[-Math.PI / 2, 0, 0]}>
+//           <mesh
+//             castShadow
+//             receiveShadow
+//             geometry={nodes.Object_2.geometry}
+//             material={materials.Box001_mtl}
+//           />
+//           <mesh
+//             castShadow
+//             receiveShadow
+//             geometry={nodes.Object_3.geometry}
+//             material={materials.Box001_mtl}
+//           />
+//         </group>
+//       </group>
+//     </group>
+//   )
+// }
+
+// useGLTF.preload('/utility_robot.glb')
 
 // import React, { useState, useEffect, useRef } from 'react'
 // import { useFrame } from '@react-three/fiber'
