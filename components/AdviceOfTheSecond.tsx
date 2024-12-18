@@ -54,7 +54,7 @@ const AdviceOfTheSecond = () => {
 
   if (error) {
     return (
-      <Card className="overflow-scroll">
+      <Card >
         <CardHeader>
           <CardTitle className="font-mono">😔 Oops!</CardTitle>
         </CardHeader>
@@ -70,7 +70,7 @@ const AdviceOfTheSecond = () => {
 
   if (!advice) {
     return (
-      <Card className="overflow-scroll">
+      <Card >
         <CardHeader>
           <CardTitle className="font-mono">😇 Hold tight!</CardTitle>
         </CardHeader>
@@ -85,7 +85,7 @@ const AdviceOfTheSecond = () => {
   }
 
   return (
-    <Card className="overflow-scroll">
+    <Card >
       <CardHeader>
         <CardTitle className="font-mono">😇 Today's Advice for you</CardTitle>
       </CardHeader>
