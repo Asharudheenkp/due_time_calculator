@@ -89,10 +89,10 @@ const AdviceOfTheSecond = () => {
         <CardTitle className="font-mono">😇 Today's Advice for you</CardTitle>
       </CardHeader>
       <CardContent >
-        <p className="text-3xl mt-8 max-md:mb-6 font-light font-serif leading-relaxed italic text-gray-800">
+        <p className="text-3xl mt-8 max-md:mb-6 font-light font-serif leading-relaxed italic text-gray-800 dark:text-white">
           “{advice}”
         </p>
-        <p className="text-right text-xl font-medium text-gray-600 mt-6">
+        <p className="text-right text-xl font-medium text-gray-600 mt-6 dark:text-white">
           — {author}
         </p>
       </CardContent>
