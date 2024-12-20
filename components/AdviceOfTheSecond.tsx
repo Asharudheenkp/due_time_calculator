@@ -3,52 +3,51 @@ import { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const AdviceOfTheSecond = () => {
+  const CACHE_KEY = "advice";
+  const CACHE_DURATION = 8 * 3600 * 1000;
+
   const [advice, setAdvice] = useState(null);
+  const [author, setAuthor] = useState(null);
   const [error, setError] = useState(null);
 
   const fetchAdvice = async () => {
     try {
-      const response = await fetch("https://api.adviceslip.com/advice");
+      const response = await fetch("https://api.quotable.io/random");
       if (!response.ok) {
         throw new Error("Failed to fetch advice");
       }
       const data = await response.json();
       const now = Date.now();
-      localStorage.setItem("advice", JSON.stringify({ timestamp: now, data }));
+      localStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: now, advice: data.content, author: data.author }));
 
-      setAdvice(data.slip.advice);
+      setAdvice(data.content);
+      setAuthor(data.author);
     } catch (err: any) {
       setError(err.message);
     }
   };
 
-  useEffect(() => {
-    const checkAndUpdateAdvice = () => {
-      const cacheKey = "advice";
-      const cacheDuration = 8 * 3600 * 1000;
-      const now = Date.now();
+  const checkAndUpdateAdvice = () => {
+    const now = Date.now();
+    try {
+      const cached = localStorage.getItem(CACHE_KEY);
+      const cachedData = cached ? JSON.parse(cached) : null;
 
-      try {
-        const cached = localStorage.getItem(cacheKey);
-        const cachedData = cached ? JSON.parse(cached) : null;
-
-        if (cachedData && now - cachedData.timestamp < cacheDuration) {
-          setAdvice(cachedData.data.slip.advice);
-        } else {
-          fetchAdvice();
-        }
-      } catch (error) {
-        console.error("Error checking cache:", error);
-        fetchAdvice(); 
+      if (cachedData && now - cachedData.timestamp < CACHE_DURATION) {
+        setAdvice(cachedData.advice);
+        setAuthor(cachedData.author);
+      } else {
+        fetchAdvice();
       }
-    };
-
-    checkAndUpdateAdvice();
-
-    const intervalId = setInterval(() => {
+    } catch (error) {
+      console.error("Error checking cache:", error);
       fetchAdvice();
-    }, 8 * 3600 * 1000);
+    }
+  };
 
+  useEffect(() => {
+    checkAndUpdateAdvice();
+    const intervalId = setInterval(fetchAdvice, CACHE_DURATION);
     return () => clearInterval(intervalId);
   }, []);
 
@@ -89,11 +88,15 @@ const AdviceOfTheSecond = () => {
       <CardHeader>
         <CardTitle className="font-mono">😇 Today's Advice for you</CardTitle>
       </CardHeader>
-      <CardContent>
-        <p className="text-2xl mt-10 max-md:mb-10 font-thin font-mono leading-9 italic">
-          "{advice}"
+      <CardContent >
+        <p className="text-3xl mt-8 max-md:mb-6 font-light font-serif leading-relaxed italic text-gray-800">
+          “{advice}”
+        </p>
+        <p className="text-right text-xl font-medium text-gray-600 mt-6">
+          — {author}
         </p>
       </CardContent>
+
     </Card>
   );
 };
