@@ -12,15 +12,15 @@ const AdviceOfTheSecond = () => {
 
   const fetchAdvice = async () => {
     try {
-      const response = await fetch("https://api.quotable.io/random");
+      const response = await fetch("/api/advice");
       if (!response.ok) {
         throw new Error("Failed to fetch advice");
       }
-      const data = await response.json();
+      const data = await response.json();      
       const now = Date.now();
-      localStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: now, advice: data.content, author: data.author }));
+      localStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: now, advice: data.quote, author: data.author }));
 
-      setAdvice(data.content);
+      setAdvice(data.quote);
       setAuthor(data.author);
     } catch (err: any) {
       setError(err.message);
