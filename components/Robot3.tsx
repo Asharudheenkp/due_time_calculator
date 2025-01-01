@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
+import * as THREE from 'three'
 
-export function Robot3(props) {
+export function Robot3(props: any) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/gunner_robot.glb')
   const { actions, names } = useAnimations(animations, group)
@@ -22,111 +23,111 @@ export function Robot3(props) {
                     <primitive object={nodes._rootJoint} />
                     <skinnedMesh
                       name="Object_8"
-                      geometry={nodes.Object_8.geometry}
+                      geometry={(nodes.Object_8 as THREE.Mesh).geometry}
                       material={materials.metal_mat01}
-                      skeleton={nodes.Object_8.skeleton}
+                      skeleton={(nodes.Object_8 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_10"
-                      geometry={nodes.Object_10.geometry}
+                      geometry={(nodes.Object_10 as THREE.Mesh).geometry}
                       material={materials.metal_mat01}
-                      skeleton={nodes.Object_10.skeleton}
+                      skeleton={(nodes.Object_10 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_11"
-                      geometry={nodes.Object_11.geometry}
+                      geometry={(nodes.Object_11 as THREE.Mesh).geometry}
                       material={materials.cell_mat}
-                      skeleton={nodes.Object_11.skeleton}
+                      skeleton={(nodes.Object_11 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_13"
-                      geometry={nodes.Object_13.geometry}
+                      geometry={(nodes.Object_13 as THREE.Mesh).geometry}
                       material={materials.metal_mat01}
-                      skeleton={nodes.Object_13.skeleton}
+                      skeleton={(nodes.Object_13 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_15"
-                      geometry={nodes.Object_15.geometry}
+                      geometry={(nodes.Object_15 as THREE.Mesh).geometry}
                       material={materials.metal_mat01}
-                      skeleton={nodes.Object_15.skeleton}
+                      skeleton={(nodes.Object_15 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_17"
-                      geometry={nodes.Object_17.geometry}
+                      geometry={(nodes.Object_17 as THREE.Mesh).geometry}
                       material={materials.metal_mat01}
-                      skeleton={nodes.Object_17.skeleton}
+                      skeleton={(nodes.Object_17 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_19"
-                      geometry={nodes.Object_19.geometry}
+                      geometry={(nodes.Object_19 as THREE.Mesh).geometry}
                       material={materials.metal_mat01}
-                      skeleton={nodes.Object_19.skeleton}
+                      skeleton={(nodes.Object_19 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_21"
-                      geometry={nodes.Object_21.geometry}
+                      geometry={(nodes.Object_21 as THREE.Mesh).geometry}
                       material={materials.mask_mat}
-                      skeleton={nodes.Object_21.skeleton}
+                      skeleton={(nodes.Object_21 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_23"
-                      geometry={nodes.Object_23.geometry}
+                      geometry={(nodes.Object_23 as THREE.Mesh).geometry}
                       material={materials.mask_mat}
-                      skeleton={nodes.Object_23.skeleton}
+                      skeleton={(nodes.Object_23 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_25"
-                      geometry={nodes.Object_25.geometry}
+                      geometry={(nodes.Object_25 as THREE.Mesh).geometry}
                       material={materials.mask_mat}
-                      skeleton={nodes.Object_25.skeleton}
+                      skeleton={(nodes.Object_25 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_27"
-                      geometry={nodes.Object_27.geometry}
+                      geometry={(nodes.Object_27 as THREE.Mesh).geometry}
                       material={materials.mask_mat}
-                      skeleton={nodes.Object_27.skeleton}
+                      skeleton={(nodes.Object_27 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_29"
-                      geometry={nodes.Object_29.geometry}
+                      geometry={(nodes.Object_29 as THREE.Mesh).geometry}
                       material={materials.cable}
-                      skeleton={nodes.Object_29.skeleton}
+                      skeleton={(nodes.Object_29 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_31"
-                      geometry={nodes.Object_31.geometry}
+                      geometry={(nodes.Object_31 as THREE.Mesh).geometry}
                       material={materials.inside}
-                      skeleton={nodes.Object_31.skeleton}
+                      skeleton={(nodes.Object_31 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_33"
-                      geometry={nodes.Object_33.geometry}
+                      geometry={(nodes.Object_33 as THREE.Mesh).geometry}
                       material={materials.metal_mat01}
-                      skeleton={nodes.Object_33.skeleton}
+                      skeleton={(nodes.Object_33 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_34"
-                      geometry={nodes.Object_34.geometry}
+                      geometry={(nodes.Object_34 as THREE.Mesh).geometry}
                       material={materials.mask_mat}
-                      skeleton={nodes.Object_34.skeleton}
+                      skeleton={(nodes.Object_34 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_35"
-                      geometry={nodes.Object_35.geometry}
+                      geometry={(nodes.Object_35 as THREE.Mesh).geometry}
                       material={materials.cell_mat}
-                      skeleton={nodes.Object_35.skeleton}
+                      skeleton={(nodes.Object_35 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_36"
-                      geometry={nodes.Object_36.geometry}
+                      geometry={(nodes.Object_36 as THREE.Mesh).geometry}
                       material={materials.eyes_mat}
-                      skeleton={nodes.Object_36.skeleton}
+                      skeleton={(nodes.Object_36 as THREE.SkinnedMesh).skeleton}
                     />
                     <skinnedMesh
                       name="Object_37"
-                      geometry={nodes.Object_37.geometry}
+                      geometry={(nodes.Object_37 as THREE.Mesh).geometry}
                       material={materials.red_mat}
-                      skeleton={nodes.Object_37.skeleton}
+                      skeleton={(nodes.Object_37 as THREE.SkinnedMesh).skeleton}
                     />
                     <group name="Object_7" />
                     <group name="Object_9" />
