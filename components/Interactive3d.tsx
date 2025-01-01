@@ -10,6 +10,8 @@ import { Axel } from "./Axel";
 import { Car } from "./Car";
 import { useRef } from "react";
 import { Robot } from "./Robot";
+import { Robot2 } from "./Robot2";
+import { Robot3 } from "./Robot3";
 
 const Interactive3d = ({model}: any) => {
   const spotlightTarget = useRef();
@@ -21,7 +23,7 @@ const Interactive3d = ({model}: any) => {
 
             <directionalLight
               position={[15, 20, 10]}
-              intensity={3.5}
+              intensity={10}
               castShadow
               shadow-mapSize-width={2048}
               shadow-mapSize-height={2048}
@@ -34,9 +36,9 @@ const Interactive3d = ({model}: any) => {
             {/* Overhead Spotlight */}
             <spotLight
               position={[0, 10, 0]}
-              intensity={5}
-              angle={0.5}
-              penumbra={0.3}
+              intensity={10}
+              angle={90}
+              penumbra={1}
               castShadow
               shadow-mapSize-width={1024}
               shadow-mapSize-height={1024}
@@ -44,14 +46,15 @@ const Interactive3d = ({model}: any) => {
             />
 
             {/* <Car ref={spotlightTarget}/> */}
-            <Robot ref={spotlightTarget}/>
-            model
+            {/* <Robot ref={spotlightTarget}/> */}
+            <Robot2 ref={spotlightTarget}/>
+            {/* <Robot3 ref={spotlightTarget}/> */}
 
             <PerspectiveCamera makeDefault position={[3, 3, 10]} />
 
             <OrbitControls
-              minDistance={7}
-              maxDistance={10}
+              minDistance={30}
+              maxDistance={40}
               zoomSpeed={0.5}
               target={[0, 0, 0]}
               enableDamping={true}
