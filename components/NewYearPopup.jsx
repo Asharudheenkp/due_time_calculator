@@ -4,7 +4,7 @@ import Confetti from "react-confetti";
 
 const NewYearPopup = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+  const [dimensions, setDimensions] = useState({ width: 1080, height: 720 });
 
   useEffect(() => {
     setDimensions({ width: window.innerWidth, height: window.innerHeight });
