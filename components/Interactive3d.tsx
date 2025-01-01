@@ -6,8 +6,6 @@ import {
   PerspectiveCamera,
 } from "@react-three/drei";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Axel } from "./Axel";
-import { Car } from "./Car";
 import { useRef } from "react";
 import { Robot } from "./Robot";
 import { Robot2 } from "./Robot2";
@@ -45,7 +43,6 @@ const Interactive3d = ({model}: any) => {
               target={spotlightTarget.current}
             />
 
-            {/* <Car ref={spotlightTarget}/> */}
             {/* <Robot ref={spotlightTarget}/> */}
             <Robot2 ref={spotlightTarget}/>
             {/* <Robot3 ref={spotlightTarget}/> */}
