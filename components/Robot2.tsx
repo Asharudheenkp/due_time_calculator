@@ -129,7 +129,7 @@ export function Robot2(props: any) {
                                           name="F_P7_leg_0"
                                           castShadow
                                           receiveShadow
-                                          geometry={nodes.F_P7_leg_0.geometry}
+                                          geometry={(nodes.F_P7_leg_0 as THREE.Mesh).geometry}
                                           material={materials.material}
                                         />
                                       </group>
@@ -148,7 +148,7 @@ export function Robot2(props: any) {
                             name="0"
                             castShadow
                             receiveShadow
-                            geometry={nodes['0'].geometry}
+                            geometry={(nodes['0'] as THREE.Mesh).geometry}
                             material={materials.body}
                           />
                           <group name="Drone_Panel_R" position={[0.679, -0.375, 4.958]}>
@@ -156,7 +156,7 @@ export function Robot2(props: any) {
                               name="Drone_Panel_R_body_0"
                               castShadow
                               receiveShadow
-                              geometry={nodes.Drone_Panel_R_body_0.geometry}
+                              geometry={(nodes.Drone_Panel_R_body_0 as THREE.Mesh).geometry}
                               material={materials.body}
                             />
                             <group
@@ -167,7 +167,7 @@ export function Robot2(props: any) {
                                 name="Drone_leg_R_leg_0"
                                 castShadow
                                 receiveShadow
-                                geometry={nodes.Drone_leg_R_leg_0.geometry}
+                                geometry={(nodes.Drone_leg_R_leg_0 as THREE.Mesh).geometry}
                                 material={materials.material}
                               />
                               <group
@@ -178,7 +178,7 @@ export function Robot2(props: any) {
                                   name="R_P1_G_leg_0"
                                   castShadow
                                   receiveShadow
-                                  geometry={nodes.R_P1_G_leg_0.geometry}
+                                  geometry={(nodes.R_P1_G_leg_0 as THREE.Mesh).geometry}
                                   material={materials.material}
                                 />
                                 <group name="R_P2" rotation={[1.334, 0, 0]}>
@@ -186,7 +186,7 @@ export function Robot2(props: any) {
                                     name="R_P2_leg_0"
                                     castShadow
                                     receiveShadow
-                                    geometry={nodes.R_P2_leg_0.geometry}
+                                    geometry={(nodes.R_P2_leg_0 as THREE.Mesh).geometry}
                                     material={materials.material}
                                   />
                                   <group name="R_P3_G" position={[0.003, -22.916, 0.027]}>
@@ -194,7 +194,7 @@ export function Robot2(props: any) {
                                       name="R_P3_G_leg_0"
                                       castShadow
                                       receiveShadow
-                                      geometry={nodes.R_P3_G_leg_0.geometry}
+                                      geometry={(nodes.R_P3_G_leg_0 as THREE.Mesh).geometry}
                                       material={materials.material}
                                     />
                                     <group
@@ -205,7 +205,7 @@ export function Robot2(props: any) {
                                         name="R_P4_leg_0"
                                         castShadow
                                         receiveShadow
-                                        geometry={nodes.R_P4_leg_0.geometry}
+                                        geometry={(nodes.R_P4_leg_0 as THREE.Mesh).geometry}
                                         material={materials.material}
                                       />
                                       <group name="R_P5_M" position={[0.011, -11.286, 0.082]}>
@@ -213,7 +213,7 @@ export function Robot2(props: any) {
                                           name="R_P5_M_leg_0"
                                           castShadow
                                           receiveShadow
-                                          geometry={nodes.R_P5_M_leg_0.geometry}
+                                          geometry={(nodes.R_P5_M_leg_0 as THREE.Mesh).geometry}
                                           material={materials.material}
                                         />
                                         <group name="R_P6_G" position={[-0.006, -9.326, -0.082]}>
@@ -221,7 +221,7 @@ export function Robot2(props: any) {
                                             name="R_P6_G_leg_0"
                                             castShadow
                                             receiveShadow
-                                            geometry={nodes.R_P6_G_leg_0.geometry}
+                                            geometry={(nodes.R_P6_G_leg_0 as THREE.Mesh).geometry}
                                             material={materials.material}
                                           />
                                           <group name="R_P7" rotation={[1.411, 0, 0]}>
@@ -229,7 +229,7 @@ export function Robot2(props: any) {
                                               name="R_P7_leg_0"
                                               castShadow
                                               receiveShadow
-                                              geometry={nodes.R_P7_leg_0.geometry}
+                                              geometry={(nodes.R_P7_leg_0 as THREE.Mesh).geometry}
                                               material={materials.material}
                                             />
                                           </group>
@@ -250,7 +250,7 @@ export function Robot2(props: any) {
                             name="Drone_Gen_L_body_0"
                             castShadow
                             receiveShadow
-                            geometry={nodes.Drone_Gen_L_body_0.geometry}
+                            geometry={(nodes.Drone_Gen_L_body_0 as THREE.Mesh).geometry}
                             material={materials.body}
                           />
                           <group name="Drone_Panel_L" position={[-0.678, -0.377, 4.958]}>
@@ -258,7 +258,7 @@ export function Robot2(props: any) {
                               name="Drone_Panel_L_body_0"
                               castShadow
                               receiveShadow
-                              geometry={nodes.Drone_Panel_L_body_0.geometry}
+                              geometry={(nodes.Drone_Panel_L_body_0 as THREE.Mesh).geometry}
                               material={materials.body}
                             />
                             <group
@@ -269,7 +269,7 @@ export function Robot2(props: any) {
                                 name="Drone_leg_L_leg_0"
                                 castShadow
                                 receiveShadow
-                                geometry={nodes.Drone_leg_L_leg_0.geometry}
+                                geometry={(nodes.Drone_leg_L_leg_0 as THREE.Mesh).geometry}
                                 material={materials.material}
                               />
                               <group
@@ -280,7 +280,7 @@ export function Robot2(props: any) {
                                   name="L_P1_G_leg_0"
                                   castShadow
                                   receiveShadow
-                                  geometry={nodes.L_P1_G_leg_0.geometry}
+                                  geometry={(nodes.L_P1_G_leg_0 as THREE.Mesh).geometry}
                                   material={materials.material}
                                 />
                                 <group name="L_P2" rotation={[1.283, 0, 0]}>
@@ -288,7 +288,7 @@ export function Robot2(props: any) {
                                     name="L_P2_leg_0"
                                     castShadow
                                     receiveShadow
-                                    geometry={nodes.L_P2_leg_0.geometry}
+                                    geometry={(nodes.L_P2_leg_0 as THREE.Mesh).geometry}
                                     material={materials.material}
                                   />
                                   <group name="L_P3_G" position={[0, -22.916, 0.027]}>
@@ -296,7 +296,7 @@ export function Robot2(props: any) {
                                       name="L_P3_G_leg_0"
                                       castShadow
                                       receiveShadow
-                                      geometry={nodes.L_P3_G_leg_0.geometry}
+                                      geometry={(nodes.L_P3_G_leg_0 as THREE.Mesh).geometry}
                                       material={materials.material}
                                     />
                                     <group
@@ -307,7 +307,7 @@ export function Robot2(props: any) {
                                         name="L_P4_leg_0"
                                         castShadow
                                         receiveShadow
-                                        geometry={nodes.L_P4_leg_0.geometry}
+                                        geometry={(nodes.L_P4_leg_0 as THREE.Mesh).geometry}
                                         material={materials.material}
                                       />
                                       <group
@@ -318,7 +318,7 @@ export function Robot2(props: any) {
                                           name="L_P5_M_leg_0"
                                           castShadow
                                           receiveShadow
-                                          geometry={nodes.L_P5_M_leg_0.geometry}
+                                          geometry={(nodes.L_P5_M_leg_0 as THREE.Mesh).geometry}
                                           material={materials.material}
                                         />
                                         <group name="L_P6_G" position={[0.143, -9.371, -0.082]}>
@@ -326,7 +326,7 @@ export function Robot2(props: any) {
                                             name="L_P6_G_leg_0"
                                             castShadow
                                             receiveShadow
-                                            geometry={nodes.L_P6_G_leg_0.geometry}
+                                            geometry={(nodes.L_P6_G_leg_0 as THREE.Mesh).geometry}
                                             material={materials.material}
                                           />
                                           <group
@@ -337,7 +337,7 @@ export function Robot2(props: any) {
                                               name="L_P7_leg_0"
                                               castShadow
                                               receiveShadow
-                                              geometry={nodes.L_P7_leg_0.geometry}
+                                              geometry={(nodes.L_P7_leg_0 as THREE.Mesh).geometry}
                                               material={materials.material}
                                             />
                                           </group>
@@ -358,7 +358,7 @@ export function Robot2(props: any) {
                             name="Drone_UPanel_R_body_0"
                             castShadow
                             receiveShadow
-                            geometry={nodes.Drone_UPanel_R_body_0.geometry}
+                            geometry={(nodes.Drone_UPanel_R_body_0 as THREE.Mesh).geometry}
                             material={materials.body}
                           />
                         </group>
@@ -370,7 +370,7 @@ export function Robot2(props: any) {
                             name="Drone_UPanel_L_body_0"
                             castShadow
                             receiveShadow
-                            geometry={nodes.Drone_UPanel_L_body_0.geometry}
+                            geometry={(nodes.Drone_UPanel_L_body_0 as THREE.Mesh).geometry}
                             material={materials.body}
                           />
                         </group>
@@ -379,7 +379,7 @@ export function Robot2(props: any) {
                             name="Drone_UPart_body_0"
                             castShadow
                             receiveShadow
-                            geometry={nodes.Drone_UPart_body_0.geometry}
+                            geometry={(nodes.Drone_UPart_body_0 as THREE.Mesh).geometry}
                             material={materials.body}
                           />
                         </group>
@@ -388,7 +388,7 @@ export function Robot2(props: any) {
                             name="Drone_ILens_body_0"
                             castShadow
                             receiveShadow
-                            geometry={nodes.Drone_ILens_body_0.geometry}
+                            geometry={(nodes.Drone_ILens_body_0 as THREE.Mesh).geometry}
                             material={materials.body}
                           />
                           <group
@@ -399,10 +399,10 @@ export function Robot2(props: any) {
                               name="1"
                               castShadow
                               receiveShadow
-                              geometry={nodes['1'].geometry}
+                              geometry={(nodes['1'] as THREE.Mesh).geometry}
                               material={materials.body}
-                              morphTargetDictionary={nodes['1'].morphTargetDictionary}
-                              morphTargetInfluences={nodes['1'].morphTargetInfluences}
+                              morphTargetDictionary={(nodes['1'] as THREE.Mesh).morphTargetDictionary}
+                              morphTargetInfluences={(nodes['1'] as THREE.Mesh).morphTargetInfluences}
                             />
                           </group>
                         </group>
@@ -414,7 +414,7 @@ export function Robot2(props: any) {
                             name="Drone_Turb_M_L_body_0"
                             castShadow
                             receiveShadow
-                            geometry={nodes.Drone_Turb_M_L_body_0.geometry}
+                            geometry={(nodes.Drone_Turb_M_L_body_0 as THREE.Mesh).geometry}
                             material={materials.body}
                           />
                           <group
@@ -425,7 +425,7 @@ export function Robot2(props: any) {
                               name="Drone_Turb_Blade_L_body_0"
                               castShadow
                               receiveShadow
-                              geometry={nodes.Drone_Turb_Blade_L_body_0.geometry}
+                              geometry={(nodes.Drone_Turb_Blade_L_body_0 as THREE.Mesh).geometry}
                               material={materials.body}
                             />
                           </group>
@@ -438,7 +438,7 @@ export function Robot2(props: any) {
                             name="Drone_Turb_M_R_body_0"
                             castShadow
                             receiveShadow
-                            geometry={nodes.Drone_Turb_M_R_body_0.geometry}
+                            geometry={(nodes.Drone_Turb_M_R_body_0 as THREE.Mesh).geometry}
                             material={materials.body}
                           />
                           <group
@@ -449,7 +449,7 @@ export function Robot2(props: any) {
                               name="Drone_Turb_Blade_R_body_0"
                               castShadow
                               receiveShadow
-                              geometry={nodes.Drone_Turb_Blade_R_body_0.geometry}
+                              geometry={(nodes.Drone_Turb_Blade_R_body_0 as THREE.Mesh).geometry}
                               material={materials.body}
                             />
                           </group>
