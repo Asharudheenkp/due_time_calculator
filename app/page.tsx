@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="mt-9 w-[80%] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-      {isNewYear() && <NewYearPopup />} 
+      {/* {isNewYear() && <NewYearPopup />}  */}
         <Calculator/>
         <Interactive3d />
         <AdviceOfTheSecond/>
