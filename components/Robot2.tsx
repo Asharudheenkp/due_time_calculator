@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import * as THREE from 'three'
@@ -12,7 +13,7 @@ export function Robot2(props: any) {
   }, [])
   
   return (
-    <group ref={group} {...props} dispose={null} scale={6.2}>
+    <group ref={group} {...props} dispose={null} scale={1.8} position={[0,1,0]}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.013}>
           <group name="BusterDronefbx" rotation={[Math.PI / 2, 0, 0]}>

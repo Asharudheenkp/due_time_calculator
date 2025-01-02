@@ -1,13 +1,9 @@
 import AdviceOfTheSecond from "@/components/AdviceOfTheSecond";
 import Calculator from "@/components/Calculator";
+import Interactive3d from "@/components/Interactive3d";
 import MouseCheck from "@/components/MouseCheck";
 import NewYearPopup from "@/components/NewYearPopup";
-
-import dynamic from 'next/dynamic';
-
-const Interactive3d = dynamic(() => import('../components/Interactive3d'), { 
-  ssr: false 
-});
+import { Robot2 } from "@/components/Robot2";
 export default function Home() {
   const isNewYear = () => {
     const today = new Date();
@@ -19,7 +15,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
       {/* {isNewYear() && <NewYearPopup />}  */}
         <Calculator/>
-        <Interactive3d />
+        <Interactive3d model={<Robot2/>}/>
         <AdviceOfTheSecond/>
         {/* <MouseCheck/> */}
       </div>

@@ -2,14 +2,9 @@
 import { Canvas } from "@react-three/fiber";
 import {
   OrbitControls,
-  useGLTF,
   PerspectiveCamera,
 } from "@react-three/drei";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useRef } from "react";
-import { Robot } from "./Robot";
-import { Robot2 } from "./Robot2";
-import { Robot3 } from "./Robot3";
 
 const Interactive3d = ({model}: any) => {
   const spotlightTarget = useRef();
@@ -42,16 +37,12 @@ const Interactive3d = ({model}: any) => {
               shadow-mapSize-height={1024}
               target={spotlightTarget.current}
             />
-
-            {/* <Robot ref={spotlightTarget}/> */}
-            <Robot2 ref={spotlightTarget}/>
-            {/* <Robot3 ref={spotlightTarget}/> */}
+              {model}
 
             <PerspectiveCamera makeDefault position={[3, 3, 10]} />
-
             <OrbitControls
-              minDistance={30}
-              maxDistance={40}
+              minDistance={7}
+              maxDistance={10}
               zoomSpeed={0.5}
               target={[0, 0, 0]}
               enableDamping={true}
