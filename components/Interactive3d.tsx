@@ -41,8 +41,8 @@ const Interactive3d = ({model}: any) => {
 
             <PerspectiveCamera makeDefault position={[3, 3, 10]} />
             <OrbitControls
-              minDistance={7}
-              maxDistance={10}
+              minDistance={10}
+              maxDistance={20}
               zoomSpeed={0.5}
               target={[0, 0, 0]}
               enableDamping={true}
