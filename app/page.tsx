@@ -3,7 +3,7 @@ import Calculator from "@/components/Calculator";
 import Interactive3d from "@/components/Interactive3d";
 import MouseCheck from "@/components/MouseCheck";
 import NewYearPopup from "@/components/NewYearPopup";
-import { Robot2 } from "@/components/Robot2";
+import { Robot3 } from "@/components/Robot3";
 import { SpiderMan } from "@/components/SpiderMan";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
       {/* {isNewYear() && <NewYearPopup />}  */}
         <Calculator/>
-        <Interactive3d model={<SpiderMan/>}/>
+        <Interactive3d model={<Robot3/>}/>
         <AdviceOfTheSecond/>
         {/* <MouseCheck/> */}
       </div>
