@@ -1,0 +1,1462 @@
+[
+  {
+    "quote": "Don’t build faster horses. Understand the problem deeply.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Don’t reinvent the wheel unless the current one sucks.",
+    "author": "James Clear"
+  },
+  {
+    "quote": "Every line of code is a liability until proven otherwise.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Meetings don’t build products. Code does.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Start side projects. They’ll teach you what your job never will.",
+    "author": "John Woods"
+  },
+  {
+    "quote": "Meetings don’t build products. Code does.",
+    "author": "Steve Krug"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Be kind in code reviews. Your goal is better code, not wounded egos.",
+    "author": "Steve Krug"
+  },
+  {
+    "quote": "The best code is no code at all — solve the real problem first.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Start side projects. They’ll teach you what your job never will.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Working software is the ultimate proof of design.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Every line of code is a liability until proven otherwise.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "Write code as if the next person to maintain it is a violent psychopath who knows where you live.",
+    "author": "Julie Zhuo"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "Write code as if the next person to maintain it is a violent psychopath who knows where you live.",
+    "author": "Bruce Schneier"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "Meetings don’t build products. Code does.",
+    "author": "Filipe Fortes"
+  },
+  {
+    "quote": "Work on problems that matter. Time is your most expensive resource.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Don’t build faster horses. Understand the problem deeply.",
+    "author": "Guillermo Rauch"
+  },
+  {
+    "quote": "You don’t have to know everything. You just need to know how to learn.",
+    "author": "Julie Zhuo"
+  },
+  {
+    "quote": "Security isn’t optional. Build it in from the start.",
+    "author": "Tim Hiller"
+  },
+  {
+    "quote": "Think about the user first. Always.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "Don’t reinvent the wheel unless the current one sucks.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Sleep well. Burnout is not a badge of honor.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Build things. Break things. Fix things. That’s how you grow.",
+    "author": "Henry Ford (paraphrased)"
+  },
+  {
+    "quote": "A good developer is always learning, always questioning, always improving.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Your soft skills will take you further than you think. Learn to communicate.",
+    "author": "Henry Ford (paraphrased)"
+  },
+  {
+    "quote": "Work on problems that matter. Time is your most expensive resource.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "Don't get attached to your code. Be ready to throw it away for something better.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "A good developer is always learning, always questioning, always improving.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Don't chase every new framework. Master the fundamentals first.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "You don’t have to know everything. You just need to know how to learn.",
+    "author": "Tim Hiller"
+  },
+  {
+    "quote": "Write tests not because you expect bugs, but because you expect change.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Sleep well. Burnout is not a badge of honor.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Sandi Metz"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Consistency in learning will take you further than bursts of intense effort.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Start side projects. They’ll teach you what your job never will.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "Don’t build faster horses. Understand the problem deeply.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Write code as if the next person to maintain it is a violent psychopath who knows where you live.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Don’t build faster horses. Understand the problem deeply.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "The best UI is often the one you don’t notice.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "When in doubt, leave it out. Simplicity scales.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "Your soft skills will take you further than you think. Learn to communicate.",
+    "author": "Guillermo Rauch"
+  },
+  {
+    "quote": "Build with empathy. Someone else will use what you create.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "The best UI is often the one you don’t notice.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Sleep well. Burnout is not a badge of honor.",
+    "author": "Filipe Fortes"
+  },
+  {
+    "quote": "A good developer is always learning, always questioning, always improving.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "You don’t have to know everything. You just need to know how to learn.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Every line of code is a liability until proven otherwise.",
+    "author": "Guillermo Rauch"
+  },
+  {
+    "quote": "Be kind in code reviews. Your goal is better code, not wounded egos.",
+    "author": "Steve Krug"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "You don’t have to know everything. You just need to know how to learn.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Every line of code is a liability until proven otherwise.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "Great software is not built in a rush. Think long-term.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Security isn’t optional. Build it in from the start.",
+    "author": "Sandi Metz"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "John Woods"
+  },
+  {
+    "quote": "Meetings don’t build products. Code does.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Build with empathy. Someone else will use what you create.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "Your first solution is rarely the best. Refactor relentlessly.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Be kind in code reviews. Your goal is better code, not wounded egos.",
+    "author": "Guillermo Rauch"
+  },
+  {
+    "quote": "Build things. Break things. Fix things. That’s how you grow.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Think about the user first. Always.",
+    "author": "Henry Ford (paraphrased)"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "Sandi Metz"
+  },
+  {
+    "quote": "Technical debt is real. Pay it down before the interest buries you.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Imposter syndrome affects even the best. Keep shipping anyway.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "The best code is no code at all — solve the real problem first.",
+    "author": "Steve Krug"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Stay curious. Technology changes fast — your willingness to learn must be faster.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Filipe Fortes"
+  },
+  {
+    "quote": "Automate repetitive tasks. Your time is too valuable to waste.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Your soft skills will take you further than you think. Learn to communicate.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Great software is not built in a rush. Think long-term.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Working software is the ultimate proof of design.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Your first solution is rarely the best. Refactor relentlessly.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "Great software is not built in a rush. Think long-term.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "When in doubt, leave it out. Simplicity scales.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Build with empathy. Someone else will use what you create.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Every line of code is a liability until proven otherwise.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Sleep well. Burnout is not a badge of honor.",
+    "author": "James Clear"
+  },
+  {
+    "quote": "The best code is no code at all — solve the real problem first.",
+    "author": "Filipe Fortes"
+  },
+  {
+    "quote": "Don’t build faster horses. Understand the problem deeply.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Build things. Break things. Fix things. That’s how you grow.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Be kind in code reviews. Your goal is better code, not wounded egos.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Consistency in learning will take you further than bursts of intense effort.",
+    "author": "Sandi Metz"
+  },
+  {
+    "quote": "Great software is not built in a rush. Think long-term.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "Start side projects. They’ll teach you what your job never will.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Good documentation is part of writing good software.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Write tests not because you expect bugs, but because you expect change.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "James Clear"
+  },
+  {
+    "quote": "Automate repetitive tasks. Your time is too valuable to waste.",
+    "author": "Bruce Schneier"
+  },
+  {
+    "quote": "If it works, ship it. Perfect is the enemy of good.",
+    "author": "Bruce Schneier"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Consistency in learning will take you further than bursts of intense effort.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Think about the user first. Always.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Build with empathy. Someone else will use what you create.",
+    "author": "Henry Ford (paraphrased)"
+  },
+  {
+    "quote": "Security isn’t optional. Build it in from the start.",
+    "author": "John Woods"
+  },
+  {
+    "quote": "Discipline in version control and documentation prevents future chaos.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Be kind in code reviews. Your goal is better code, not wounded egos.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "If it works, ship it. Perfect is the enemy of good.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "Start side projects. They’ll teach you what your job never will.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "The best UI is often the one you don’t notice.",
+    "author": "John Woods"
+  },
+  {
+    "quote": "A good developer is always learning, always questioning, always improving.",
+    "author": "Tim Hiller"
+  },
+  {
+    "quote": "Don't get attached to your code. Be ready to throw it away for something better.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "If it works, ship it. Perfect is the enemy of good.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Julie Zhuo"
+  },
+  {
+    "quote": "Build with empathy. Someone else will use what you create.",
+    "author": "Filipe Fortes"
+  },
+  {
+    "quote": "Write tests not because you expect bugs, but because you expect change.",
+    "author": "Henry Ford (paraphrased)"
+  },
+  {
+    "quote": "Build things. Break things. Fix things. That’s how you grow.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Write code as if the next person to maintain it is a violent psychopath who knows where you live.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "Stay curious. Technology changes fast — your willingness to learn must be faster.",
+    "author": "Unknown"
+  },
+  {
+    "quote": "Consistency in learning will take you further than bursts of intense effort.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Great software is not built in a rush. Think long-term.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Julie Zhuo"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "Unknown"
+  },
+  {
+    "quote": "Write tests not because you expect bugs, but because you expect change.",
+    "author": "James Clear"
+  },
+  {
+    "quote": "Stay curious. Technology changes fast — your willingness to learn must be faster.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "James Clear"
+  },
+  {
+    "quote": "Stay curious. Technology changes fast — your willingness to learn must be faster.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Automate repetitive tasks. Your time is too valuable to waste.",
+    "author": "Steve Krug"
+  },
+  {
+    "quote": "Good documentation is part of writing good software.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "Great software is not built in a rush. Think long-term.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Don’t build faster horses. Understand the problem deeply.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "James Clear"
+  },
+  {
+    "quote": "Start side projects. They’ll teach you what your job never will.",
+    "author": "Tim Hiller"
+  },
+  {
+    "quote": "If it works, ship it. Perfect is the enemy of good.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Discipline in version control and documentation prevents future chaos.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Every line of code is a liability until proven otherwise.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Don't get attached to your code. Be ready to throw it away for something better.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Working software is the ultimate proof of design.",
+    "author": "Uncle Bob"
+  },
+  {
+    "quote": "Security isn’t optional. Build it in from the start.",
+    "author": "James Clear"
+  },
+  {
+    "quote": "Don’t reinvent the wheel unless the current one sucks.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Write code as if the next person to maintain it is a violent psychopath who knows where you live.",
+    "author": "John Woods"
+  },
+  {
+    "quote": "Don't chase every new framework. Master the fundamentals first.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Discipline in version control and documentation prevents future chaos.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Build things. Break things. Fix things. That’s how you grow.",
+    "author": "Guillermo Rauch"
+  },
+  {
+    "quote": "A good developer is always learning, always questioning, always improving.",
+    "author": "Tim Hiller"
+  },
+  {
+    "quote": "Technical debt is real. Pay it down before the interest buries you.",
+    "author": "Tim Hiller"
+  },
+  {
+    "quote": "The best code is no code at all — solve the real problem first.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Build things. Break things. Fix things. That’s how you grow.",
+    "author": "Tim Hiller"
+  },
+  {
+    "quote": "Build things. Break things. Fix things. That’s how you grow.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "A good developer is always learning, always questioning, always improving.",
+    "author": "Guillermo Rauch"
+  },
+  {
+    "quote": "Meetings don’t build products. Code does.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Don’t reinvent the wheel unless the current one sucks.",
+    "author": "Julie Zhuo"
+  },
+  {
+    "quote": "Stay curious. Technology changes fast — your willingness to learn must be faster.",
+    "author": "Uncle Bob"
+  },
+  {
+    "quote": "Consistency in learning will take you further than bursts of intense effort.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Stay curious. Technology changes fast — your willingness to learn must be faster.",
+    "author": "Steve Krug"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "Don't chase every new framework. Master the fundamentals first.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Think about the user first. Always.",
+    "author": "Filipe Fortes"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Steve Krug"
+  },
+  {
+    "quote": "Write tests not because you expect bugs, but because you expect change.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Be kind in code reviews. Your goal is better code, not wounded egos.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Technical debt is real. Pay it down before the interest buries you.",
+    "author": "John Woods"
+  },
+  {
+    "quote": "The best UI is often the one you don’t notice.",
+    "author": "Henry Ford (paraphrased)"
+  },
+  {
+    "quote": "Be kind in code reviews. Your goal is better code, not wounded egos.",
+    "author": "James Clear"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Don't chase every new framework. Master the fundamentals first.",
+    "author": "Guillermo Rauch"
+  },
+  {
+    "quote": "Sleep well. Burnout is not a badge of honor.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Be kind in code reviews. Your goal is better code, not wounded egos.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Write code as if the next person to maintain it is a violent psychopath who knows where you live.",
+    "author": "Bruce Schneier"
+  },
+  {
+    "quote": "Don’t build faster horses. Understand the problem deeply.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Don't get attached to your code. Be ready to throw it away for something better.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Don’t build faster horses. Understand the problem deeply.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "You don’t have to know everything. You just need to know how to learn.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Steve Krug"
+  },
+  {
+    "quote": "Don't chase every new framework. Master the fundamentals first.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Code is like humor. When you have to explain it, it’s bad.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Think about the user first. Always.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Sleep well. Burnout is not a badge of honor.",
+    "author": "Uncle Bob"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Don’t build faster horses. Understand the problem deeply.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Your soft skills will take you further than you think. Learn to communicate.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Your first solution is rarely the best. Refactor relentlessly.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Imposter syndrome affects even the best. Keep shipping anyway.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Don't get attached to your code. Be ready to throw it away for something better.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Build with empathy. Someone else will use what you create.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Imposter syndrome affects even the best. Keep shipping anyway.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Your soft skills will take you further than you think. Learn to communicate.",
+    "author": "Julie Zhuo"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Build with empathy. Someone else will use what you create.",
+    "author": "Uncle Bob"
+  },
+  {
+    "quote": "Don't chase every new framework. Master the fundamentals first.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "Build with empathy. Someone else will use what you create.",
+    "author": "Julie Zhuo"
+  },
+  {
+    "quote": "Your first solution is rarely the best. Refactor relentlessly.",
+    "author": "Filipe Fortes"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Every line of code is a liability until proven otherwise.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Your soft skills will take you further than you think. Learn to communicate.",
+    "author": "Bruce Schneier"
+  },
+  {
+    "quote": "If it works, ship it. Perfect is the enemy of good.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "John Woods"
+  },
+  {
+    "quote": "Security isn’t optional. Build it in from the start.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Don't chase every new framework. Master the fundamentals first.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "If it works, ship it. Perfect is the enemy of good.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "Imposter syndrome affects even the best. Keep shipping anyway.",
+    "author": "Julie Zhuo"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Code is like humor. When you have to explain it, it’s bad.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Good documentation is part of writing good software.",
+    "author": "Tim Hiller"
+  },
+  {
+    "quote": "Your soft skills will take you further than you think. Learn to communicate.",
+    "author": "Steve Krug"
+  },
+  {
+    "quote": "Every line of code is a liability until proven otherwise.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Your first solution is rarely the best. Refactor relentlessly.",
+    "author": "Filipe Fortes"
+  },
+  {
+    "quote": "Security isn’t optional. Build it in from the start.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Write code as if the next person to maintain it is a violent psychopath who knows where you live.",
+    "author": "Unknown"
+  },
+  {
+    "quote": "Code is like humor. When you have to explain it, it’s bad.",
+    "author": "Bruce Schneier"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Write code as if the next person to maintain it is a violent psychopath who knows where you live.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Discipline in version control and documentation prevents future chaos.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Every line of code is a liability until proven otherwise.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Great software is not built in a rush. Think long-term.",
+    "author": "Voltaire"
+  },
+  {
+    "quote": "The best code is no code at all — solve the real problem first.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Work on problems that matter. Time is your most expensive resource.",
+    "author": "Unknown"
+  },
+  {
+    "quote": "Meetings don’t build products. Code does.",
+    "author": "Guillermo Rauch"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Henry Ford (paraphrased)"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "Don't chase every new framework. Master the fundamentals first.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Your soft skills will take you further than you think. Learn to communicate.",
+    "author": "Uncle Bob"
+  },
+  {
+    "quote": "The best UI is often the one you don’t notice.",
+    "author": "James Clear"
+  },
+  {
+    "quote": "If it works, ship it. Perfect is the enemy of good.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "Steve Krug"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "Your soft skills will take you further than you think. Learn to communicate.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Don't chase every new framework. Master the fundamentals first.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Don’t reinvent the wheel unless the current one sucks.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "Start side projects. They’ll teach you what your job never will.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "Your first solution is rarely the best. Refactor relentlessly.",
+    "author": "Julie Zhuo"
+  },
+  {
+    "quote": "Be kind in code reviews. Your goal is better code, not wounded egos.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "Build things. Break things. Fix things. That’s how you grow.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "When in doubt, leave it out. Simplicity scales.",
+    "author": "Uncle Bob"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Every line of code is a liability until proven otherwise.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Great software is not built in a rush. Think long-term.",
+    "author": "Sandi Metz"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Imposter syndrome affects even the best. Keep shipping anyway.",
+    "author": "Steve Krug"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "The best code is no code at all — solve the real problem first.",
+    "author": "Sandi Metz"
+  },
+  {
+    "quote": "If it works, ship it. Perfect is the enemy of good.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Imposter syndrome affects even the best. Keep shipping anyway.",
+    "author": "Uncle Bob"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "Uncle Bob"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Don’t build faster horses. Understand the problem deeply.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Be kind in code reviews. Your goal is better code, not wounded egos.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "Automate repetitive tasks. Your time is too valuable to waste.",
+    "author": "Unknown"
+  },
+  {
+    "quote": "Sleep well. Burnout is not a badge of honor.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Think about the user first. Always.",
+    "author": "Henry Ford (paraphrased)"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "If it works, ship it. Perfect is the enemy of good.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Don't chase every new framework. Master the fundamentals first.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Sleep well. Burnout is not a badge of honor.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Discipline in version control and documentation prevents future chaos.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "When in doubt, leave it out. Simplicity scales.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Working software is the ultimate proof of design.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Code is like humor. When you have to explain it, it’s bad.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "Build things. Break things. Fix things. That’s how you grow.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Build with empathy. Someone else will use what you create.",
+    "author": "Sandi Metz"
+  },
+  {
+    "quote": "Build things. Break things. Fix things. That’s how you grow.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "James Clear"
+  },
+  {
+    "quote": "Security isn’t optional. Build it in from the start.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "Think about the user first. Always.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "Work on problems that matter. Time is your most expensive resource.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Every system has a breaking point. Design for failure, not perfection.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "If it works, ship it. Perfect is the enemy of good.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Don’t build faster horses. Understand the problem deeply.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Good documentation is part of writing good software.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "Always ask 'why', not just 'how'. It separates coders from engineers.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "Consistency in learning will take you further than bursts of intense effort.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Meetings don’t build products. Code does.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Be kind in code reviews. Your goal is better code, not wounded egos.",
+    "author": "Unknown"
+  },
+  {
+    "quote": "Build with empathy. Someone else will use what you create.",
+    "author": "John Woods"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "If it works, ship it. Perfect is the enemy of good.",
+    "author": "Henry Ford (paraphrased)"
+  },
+  {
+    "quote": "Meetings don’t build products. Code does.",
+    "author": "Henry Ford (paraphrased)"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "Guillermo Rauch"
+  },
+  {
+    "quote": "Don’t reinvent the wheel unless the current one sucks.",
+    "author": "Unknown"
+  },
+  {
+    "quote": "Technical debt is real. Pay it down before the interest buries you.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "Great software is not built in a rush. Think long-term.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "Write code as if the next person to maintain it is a violent psychopath who knows where you live.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Working software is the ultimate proof of design.",
+    "author": "Guillermo Rauch"
+  },
+  {
+    "quote": "The best UI is often the one you don’t notice.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "If it works, ship it. Perfect is the enemy of good.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Great software is not built in a rush. Think long-term.",
+    "author": "Tim Hiller"
+  },
+  {
+    "quote": "Don't get attached to your code. Be ready to throw it away for something better.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Discipline in version control and documentation prevents future chaos.",
+    "author": "Bruce Schneier"
+  },
+  {
+    "quote": "Sleep well. Burnout is not a badge of honor.",
+    "author": "Filipe Fortes"
+  },
+  {
+    "quote": "Discipline in version control and documentation prevents future chaos.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "A good developer is always learning, always questioning, always improving.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Great software is not built in a rush. Think long-term.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Sleep well. Burnout is not a badge of honor.",
+    "author": "Jeff Atwood"
+  },
+  {
+    "quote": "Discipline in version control and documentation prevents future chaos.",
+    "author": "James Clear"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Working software is the ultimate proof of design.",
+    "author": "Henry Ford (paraphrased)"
+  },
+  {
+    "quote": "Don't get attached to your code. Be ready to throw it away for something better.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Discipline in version control and documentation prevents future chaos.",
+    "author": "Filipe Fortes"
+  },
+  {
+    "quote": "Build things. Break things. Fix things. That’s how you grow.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "Security isn’t optional. Build it in from the start.",
+    "author": "Julie Zhuo"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "Jocko Willink"
+  },
+  {
+    "quote": "Build with empathy. Someone else will use what you create.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Don’t reinvent the wheel unless the current one sucks.",
+    "author": "Guillermo Rauch"
+  },
+  {
+    "quote": "Imposter syndrome affects even the best. Keep shipping anyway.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "Write tests not because you expect bugs, but because you expect change.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Think about the user first. Always.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Technical debt is real. Pay it down before the interest buries you.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Brian Holt"
+  },
+  {
+    "quote": "Work on problems that matter. Time is your most expensive resource.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "The best UI is often the one you don’t notice.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Don't compare your career to others. Focus on growth, not competition.",
+    "author": "Julie Zhuo"
+  },
+  {
+    "quote": "Technical debt is real. Pay it down before the interest buries you.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "Don't chase every new framework. Master the fundamentals first.",
+    "author": "Marie Forleo"
+  },
+  {
+    "quote": "Meetings don’t build products. Code does.",
+    "author": "Sandi Metz"
+  },
+  {
+    "quote": "Don't chase every new framework. Master the fundamentals first.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Focus on solving problems, not showing off with clever code.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "Working software is the ultimate proof of design.",
+    "author": "Unknown"
+  },
+  {
+    "quote": "Don’t reinvent the wheel unless the current one sucks.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "The best code is no code at all — solve the real problem first.",
+    "author": "Steve Krug"
+  },
+  {
+    "quote": "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Stay curious. Technology changes fast — your willingness to learn must be faster.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "You don’t have to know everything. You just need to know how to learn.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "You don’t have to know everything. You just need to know how to learn.",
+    "author": "Charity Majors"
+  },
+  {
+    "quote": "You don’t have to know everything. You just need to know how to learn.",
+    "author": "Robert C. Martin"
+  },
+  {
+    "quote": "Write code as if the next person to maintain it is a violent psychopath who knows where you live.",
+    "author": "Robert Martin"
+  },
+  {
+    "quote": "Work on problems that matter. Time is your most expensive resource.",
+    "author": "Cory House"
+  },
+  {
+    "quote": "Start side projects. They’ll teach you what your job never will.",
+    "author": "Phil Karlton"
+  },
+  {
+    "quote": "Start side projects. They’ll teach you what your job never will.",
+    "author": "Jared Spool"
+  },
+  {
+    "quote": "Working software is the ultimate proof of design.",
+    "author": "Jason Fried"
+  },
+  {
+    "quote": "When in doubt, leave it out. Simplicity scales.",
+    "author": "Martin Fowler"
+  },
+  {
+    "quote": "Don't get attached to your code. Be ready to throw it away for something better.",
+    "author": "Alex Pang"
+  },
+  {
+    "quote": "Your first solution is rarely the best. Refactor relentlessly.",
+    "author": "Dan Abramov"
+  },
+  {
+    "quote": "Write tests not because you expect bugs, but because you expect change.",
+    "author": "Guillermo Rauch"
+  },
+  {
+    "quote": "Your first solution is rarely the best. Refactor relentlessly.",
+    "author": "Filipe Fortes"
+  },
+  {
+    "quote": "Don’t underestimate the power of naming things well.",
+    "author": "Kent Beck"
+  },
+  {
+    "quote": "Don’t build faster horses. Understand the problem deeply.",
+    "author": "Rich Hickey"
+  },
+  {
+    "quote": "Automate repetitive tasks. Your time is too valuable to waste.",
+    "author": "Tim Hiller"
+  }
+]
