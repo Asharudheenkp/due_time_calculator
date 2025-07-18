@@ -225,7 +225,7 @@ const Calculator2 = () => {
                   <>
                     {isOverTime && (
                       <>
-                        {`The over time to76:00 PM: ${timeInfo.overTimeToMin} `}
+                        {`The over time to 7:00 PM: ${timeInfo.overTimeToMin} `}
                         <br />
                       </>
                     )}

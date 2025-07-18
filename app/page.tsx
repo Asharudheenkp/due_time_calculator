@@ -1,5 +1,6 @@
 import AdviceOfTheSecond from "@/components/AdviceOfTheSecond";
 import Calculator from "@/components/Calculator";
+import Calculator2 from "@/components/Calculator2";
 import Interactive3d from "@/components/Interactive3d";
 import MouseCheck from "@/components/MouseCheck";
 import NewYearPopup from "@/components/NewYearPopup";
@@ -16,7 +17,8 @@ export default function Home() {
     <div className="mt-9 w-[80%] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
       {/* {isNewYear() && <NewYearPopup />}  */}
-        <Calculator/>
+        {/* <Calculator/> */}
+        <Calculator2/>
         <Interactive3d model={<Robot3/>}/>
         <AdviceOfTheSecond/>
         {/* <MouseCheck/> */}
