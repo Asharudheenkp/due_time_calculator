@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const AdviceOfTheSecond = () => {
   const CACHE_KEY = "advice";
-  const CACHE_DURATION = 8 * 3600 * 1000;
+  const CACHE_DURATION = (1000 * 60) * 5;
 
   const [advice, setAdvice] = useState(null);
   const [author, setAuthor] = useState(null);
